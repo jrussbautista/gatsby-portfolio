@@ -4,9 +4,9 @@ import styled from "styled-components"
 import { ThemeProvider } from "styled-components"
 import { useStaticQuery, graphql } from "gatsby"
 import GlobalStyles from "../../styles/globalStyles"
-import Header from "./header"
+import Header from "./Header"
 import theme from "../../utils/theme"
-import Footer from "./footer"
+import Footer from "./Footer"
 
 const Container = styled.main`
   max-width: 1200px;

@@ -4,6 +4,7 @@ import Github from "../icons/github"
 import CodePen from "../icons/codepen"
 import LinkedIn from "../icons/linkedin"
 import data from "../../../content/data.json"
+import useDarkMode from "use-dark-mode"
 
 const StyledFooter = styled.footer`
   padding: 3rem 2rem;
@@ -16,9 +17,8 @@ const StyledFooter = styled.footer`
 
     li {
       svg {
-        width: 1.5rem;
-        height: 1.5rem;
-        fill: inherit;
+        width: 2.5rem;
+        height: 2.5rem;
       }
 
       &:not(:last-child) {
@@ -29,7 +29,7 @@ const StyledFooter = styled.footer`
 
   .author {
     margin-top: 2rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   .copyright {

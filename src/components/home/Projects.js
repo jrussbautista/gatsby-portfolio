@@ -2,19 +2,20 @@ import React, { useState } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import styled from "styled-components"
-import Heading from "./heading"
+import Heading from "../common/Heading"
 import Github from "../icons/github"
 import LinkIcon from "../icons/link"
 
 const Row = styled.div`
   display: flex;
   flex-wrap: wrap;
-  padding: 1rem;
+  padding: 1.5rem;
+  margin: 2rem 0 6rem 0;
 `
 
 const Col = styled.div`
   width: 100%;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
 `
 
 const Card = styled.div`
@@ -22,7 +23,7 @@ const Card = styled.div`
   overflow: hidden;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 15px;
+  grid-gap: 2rem;
 `
 
 const ImageWrapper = styled.div`
@@ -37,19 +38,19 @@ const Info = styled.div`
   padding: 0.8rem;
 
   .desc {
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: 1.5rem;
   }
 `
 
 const Name = styled.div`
-  font-size: 1.2rem;
+  font-size: 2rem;
   margin-bottom: 0.6rem;
+  font-weight: 600;
 `
 
 const StacksWrapper = styled.div`
   label {
-    font-size: 1rem;
+    font-size: 1.3rem;
     display: block;
     margin-bottom: 0.2rem;
   }
@@ -57,7 +58,7 @@ const StacksWrapper = styled.div`
   ul {
     display: flex;
     li {
-      font-size: 0.8rem;
+      font-size: 1.3rem;
       padding: 0.3rem 0.5rem;
       margin-top: 0.3rem;
       color: ${props => props.theme.colors.primary};
@@ -78,7 +79,7 @@ const Tabs = styled.div`
     text-align: center;
     padding: 1rem 0;
     cursor: pointer;
-    font-size: 1.1rem;
+    font-size: 1.8rem;
   }
 
   .active {
@@ -89,24 +90,24 @@ const Tabs = styled.div`
 `
 
 const Buttons = styled.div`
-  padding-top: 1rem;
+  padding-top: 2rem;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 
   .btn {
-    padding: 0.6rem 0;
+    padding: 0.8rem 0;
     border: 1px solid transparent;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 1.5rem;
     margin-right: 1rem;
     border-radius: 4px;
-    width: 6rem;
+    width: 10rem;
     text-align: center;
 
     svg {
-      width: 1rem;
-      height: 1rem;
+      width: 1.5rem;
+      height: 1.5rem;
       margin-left: 0.4rem;
     }
   }
@@ -170,9 +171,9 @@ export default () => {
   `)
 
   return (
-    <div id="project">
+    <div id="project" style={{ margin: "3rem 0" }}>
       <Heading title="Projects I Built" />
-      <Tabs>
+      {/* <Tabs>
         <div
           className={`tab-list ${active === "All" ? "active" : ""}`}
           onClick={() => setActive("All")}
@@ -193,7 +194,7 @@ export default () => {
         >
           Mobile
         </div>
-      </Tabs>
+      </Tabs> */}
       <Row>
         {items.edges.map(item => (
           <Col key={item.node.id}>
@@ -231,7 +232,7 @@ export default () => {
                     className="btn btn-primary"
                   >
                     {" "}
-                    Site <LinkIcon />{" "}
+                    Visit <LinkIcon />{" "}
                   </a>
                   <a
                     target="_blank"
@@ -240,7 +241,7 @@ export default () => {
                     className="btn btn-outline"
                   >
                     {" "}
-                    Code <Github />
+                    Source <Github />
                   </a>
                 </Buttons>
               </Info>

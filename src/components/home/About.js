@@ -1,19 +1,19 @@
 import React from "react"
-import Heading from "./heading"
+import Heading from "../common/Heading"
 import me from "../../images/me.jpg"
 import styled from "styled-components"
 
 const StyledAbout = styled.div`
-  padding: 0 1.5rem 3rem 1.5rem;
+  padding: 1rem 1.5rem 6rem 1.5rem;
 
   .desc {
-    font-size: 1.1rem;
+    font-size: 1.6rem;
     padding: 1rem 0;
   }
 
   .grid {
     display: grid;
-    grid-gap: 15px;
+    grid-gap: 1.5rem;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 

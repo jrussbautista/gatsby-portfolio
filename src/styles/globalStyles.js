@@ -7,6 +7,15 @@ export default createGlobalStyle`
     html {
       box-sizing: border-box;
       line-height: 1.15;
+      font-size: 62.5%;
+
+      @media ${props => props.theme.mediaQueries.medium}{
+        font-size: 70%;
+      }
+
+      @media ${props => props.theme.mediaQueries.large}{
+        font-size: 75%;
+      }
     }
 
     :root {
@@ -32,6 +41,8 @@ export default createGlobalStyle`
       font-family: 'Montserrat', 'sans-serif';
       margin: 0;
       font-weight: 400;
+
+
 
       &.light-mode {
           background-color: #fff;

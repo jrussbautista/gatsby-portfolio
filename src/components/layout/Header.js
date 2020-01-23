@@ -13,7 +13,7 @@ const Header = styled.header`
   left: 0;
   right: 0;
   z-index: 20;
-  height: 70px;
+  height: 7rem;
   background-color: ${props => (props.isDark ? "#121212" : "#fff")};
   box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.06);
 
@@ -28,7 +28,7 @@ const Header = styled.header`
   .logo-title {
     font-weight: 700;
     color: var(--color-primary);
-    font-size: 1.6rem;
+    font-size: 2.5rem;
   }
   .spacer {
     flex: 1;
@@ -38,8 +38,8 @@ const Header = styled.header`
     border: 0;
     cursor: pointer;
     svg {
-      width: 2rem;
-      height: 2rem;
+      width: 2.5rem;
+      height: 2.5rem;
       transform: rotate(180deg);
     }
     rect {
@@ -59,7 +59,7 @@ const Header = styled.header`
     fill: #fff;
   }
   .switch-wrapper {
-    margin: 2rem 1rem;
+    margin: 2rem 0;
   }
 `
 
@@ -96,7 +96,7 @@ const Menu = styled.div`
     text-align: center;
 
     a {
-      font-size: 1.4rem;
+      font-size: 2.5rem;
     }
   }
 `

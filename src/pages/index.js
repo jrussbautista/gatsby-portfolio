@@ -1,11 +1,11 @@
 import React from "react"
 import Layout from "../components/layout/"
 import SEO from "../components/seo"
-import Skills from "../components/home/skills"
-import Hero from "../components/home/hero"
-import Projects from "../components/home/projects"
-import ContactForm from "../components/home/contactForm"
-import About from "../components/home/about"
+import Skills from "../components/home/Skills"
+import Hero from "../components/home/Hero"
+import Projects from "../components/home/Projects"
+import ContactForm from "../components/home/ContactForm"
+import About from "../components/home/About"
 
 const IndexPage = ({ data }) => {
   return (

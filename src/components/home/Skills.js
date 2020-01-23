@@ -1,12 +1,12 @@
 import React from "react"
 import styled from "styled-components"
-import Heading from "./heading"
+import Heading from "../common/Heading"
 import FrontendIcon from "../icons/frontend"
 import Backend from "../icons/backend"
 import Database from "../icons/database"
 
 const Wrapper = styled.div`
-  margin-bottom: 3rem;
+  margin: 2rem 0 6rem 0;
   padding: 0 1.5rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -17,29 +17,29 @@ const Stacks = styled.ul`
   list-style-type: none;
 
   li {
-    padding: 0.6rem;
-    font-size: 1rem;
+    padding: 1rem;
+    font-size: 1.5rem;
     text-align: center;
   }
 `
 
 const Card = styled.div`
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.08);
-  padding: 1rem;
+  padding: 1.5rem;
   border-radius: 15px;
   text-align: center;
   border: 1px solid #eee;
 
   .card-title {
-    font-size: 1.3rem;
+    font-size: 2rem;
     font-weight: 600;
     text-align: center;
     margin-bottom: 1rem;
   }
 
   .icon {
-    width: 5rem;
-    height: 5rem;
+    width: 6rem;
+    height: 6rem;
   }
 
   svg {

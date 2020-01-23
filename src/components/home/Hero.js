@@ -12,58 +12,61 @@ const Hero = styled.section`
   justify-content: center;
 
   h1 {
-    font-size: 2.2rem;
-    margin: 1rem 0;
+    font-size: 3rem;
+    margin: 1.5rem 0;
   }
 
   .avatar-wrapper {
-    padding: 3rem 0;
+    padding: 3rem;
     text-align: center;
 
-    @media only screen and (min-width: 680px) {
+    @media ${props => props.theme.mediaQueries.medium} {
       order: 2;
     }
   }
 
   .avatar {
-    width: 10rem;
+    width: 16rem;
   }
 
   .intro-info {
     text-align: left;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
+    flex-direction: column;
+
+    @media ${props => props.theme.mediaQueries.medium} {
+      flex-direction: row;
+    }
   }
 
   .intro-job {
     font-size: 1.8rem;
-    line-height: 2.2rem;
     font-weight: 600;
   }
 
   .intro-desc {
-    margin-top: 1rem;
-    font-size: 2rem;
-    line-height: 2.4rem;
+    margin-top: 1.5rem;
+    font-size: 2.8rem;
   }
 
   .intro-text {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   .sub {
     margin-top: 2rem;
-    line-height: 1.5rem;
-    font-size: 1.1rem;
+    line-height: 2rem;
+    font-size: 1.5rem;
   }
 
   .btn {
     margin-top: 2rem;
     border: 1px solid var(--color-primary);
     border-radius: 6px;
-    padding: 1rem 2.2rem;
+    height: 5rem;
+    padding: 0 3rem;
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     background-color: transparent;
     color: var(--color-primary);
     cursor: pointer;

@@ -1,12 +1,12 @@
 import React from "react"
 import styled from "styled-components"
-import Heading from "./heading"
+import Heading from "../common/Heading"
 
 const Container = styled.div`
-  margin: 2rem 0 5rem 0;
+  margin: 3rem 0 5rem 0;
 
   .page-text {
-    font-size: 1rem;
+    font-size: 1.6rem;
     margin-top: 1rem 0;
     text-align: center;
   }
@@ -23,20 +23,21 @@ const Form = styled.form`
   label {
     display: block;
     padding: 1rem 0;
+    font-size: 1.6rem;
   }
 
   input {
     width: 100%;
-    font-size: 1.2rem;
+    font-size: 1.7rem;
     padding: 0 0.5rem;
-    height: 3rem;
+    height: 4rem;
     background: transparent;
     border: 1px solid transparent;
     border-bottom: 1px solid #c5c6c9;
   }
 
   textarea {
-    font-size: 1.2rem;
+    font-size: 1.7rem;
     padding: 0 0.5rem;
     border: 1px solid transparent;
     border-bottom: 1px solid #c5c6c9;
@@ -45,12 +46,12 @@ const Form = styled.form`
 
   .btn {
     border-radius: 0.4rem;
-    height: 3.5rem;
+    height: 6rem;
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--color-primary);
-    font-size: 1.4rem;
+    font-size: 2rem;
     background-color: #fff;
     border: 1px solid var(--color-primary);
     cursor: pointer;
