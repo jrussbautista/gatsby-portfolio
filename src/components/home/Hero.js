@@ -18,7 +18,7 @@ const Hero = styled.section`
   }
 
   .avatar-wrapper {
-    padding: 3rem;
+    padding: 3rem 5rem;
     text-align: center;
 
     @media ${props => props.theme.mediaQueries.medium} {
@@ -99,7 +99,7 @@ export default () => {
         <div className="avatar-wrapper">
           <img src={avatar} className="avatar" alt="avatar" />
         </div>
-        <div>
+        <div style={{ flex: 1 }}>
           <div className="intro-text"> Hi. I'm</div>
           <h1> {data.site.siteMetadata.author}.</h1>
           <div className="intro-desc">{data.site.siteMetadata.intro}</div>

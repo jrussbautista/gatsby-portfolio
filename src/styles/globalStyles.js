@@ -4,6 +4,7 @@ export default createGlobalStyle`
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap');
 
+
     html {
       box-sizing: border-box;
       line-height: 1.15;

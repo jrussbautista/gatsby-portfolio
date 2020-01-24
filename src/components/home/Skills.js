@@ -7,10 +7,10 @@ import Database from "../icons/database"
 
 const Wrapper = styled.div`
   margin: 2rem 0 6rem 0;
-  padding: 0 1.5rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  justify-content: space-around;
+  grid-gap: 3rem;
 `
 
 const Stacks = styled.ul`
@@ -52,40 +52,42 @@ export default () => {
   return (
     <div id="skill">
       <Heading title="My Stacks " />
-      <Wrapper>
-        <Card>
-          <FrontendIcon />
-          <div className="card-title"> Front End </div>
-          <Stacks>
-            <li> HTML </li>
-            <li> CSS/ SCSS</li>
-            <li> Javascript </li>
-            <li> React JS </li>
-            <li> Redux </li>
-            <li> Next JS</li>
-          </Stacks>
-        </Card>
-        <Card>
-          <Backend />
-          <div className="card-title"> Back End </div>
-          <Stacks>
-            <li> Node JS</li>
-            <li> Express Js </li>
-            <li> Restful Api </li>
-            <li> GraphQL </li>
-          </Stacks>
-        </Card>
+      <div style={{ padding: "1.5rem" }}>
+        <Wrapper>
+          <Card>
+            <FrontendIcon />
+            <div className="card-title"> Front End </div>
+            <Stacks>
+              <li> HTML </li>
+              <li> CSS/ SCSS</li>
+              <li> Javascript </li>
+              <li> React JS </li>
+              <li> Redux </li>
+              <li> Next JS</li>
+            </Stacks>
+          </Card>
+          <Card>
+            <Backend />
+            <div className="card-title"> Back End </div>
+            <Stacks>
+              <li> Node JS</li>
+              <li> Express Js </li>
+              <li> Restful Api </li>
+              <li> GraphQL </li>
+            </Stacks>
+          </Card>
 
-        <Card>
-          <Database />
-          <div className="card-title"> Database</div>
-          <Stacks>
-            <li> MySQL</li>
-            <li> Firebase </li>
-            <li> Mongo Db </li>
-          </Stacks>
-        </Card>
-      </Wrapper>
+          <Card>
+            <Database />
+            <div className="card-title"> Database</div>
+            <Stacks>
+              <li> MySQL</li>
+              <li> Firebase </li>
+              <li> Mongo Db </li>
+            </Stacks>
+          </Card>
+        </Wrapper>
+      </div>
     </div>
   )
 }

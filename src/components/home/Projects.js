@@ -7,8 +7,6 @@ import Github from "../icons/github"
 import LinkIcon from "../icons/link"
 
 const Row = styled.div`
-  display: flex;
-  flex-wrap: wrap;
   padding: 1.5rem;
   margin-top: 2rem;
   margin-bottom: 6rem;
@@ -26,7 +24,7 @@ const Card = styled.div`
   border-radius: 15px;
   overflow: hidden;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   grid-gap: 2rem;
 `
 
@@ -51,7 +49,7 @@ const Info = styled.div`
 `
 
 const Name = styled.div`
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-bottom: 0.6rem;
   font-weight: 600;
 `

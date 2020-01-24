@@ -65,6 +65,7 @@ const Header = styled.header`
   }
   .switch-wrapper {
     margin: 2rem 0;
+    text-align: center;
   }
 `
 
@@ -105,7 +106,7 @@ const Menu = styled.div`
     text-align: center;
 
     a {
-      font-size: 2.5rem;
+      font-size: 2.2rem;
     }
   }
 `

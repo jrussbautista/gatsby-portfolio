@@ -11,13 +11,13 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <SEO
-        title="Home"
+        title="James Russel C. Bautista"
         keywords={[
           `full-stack developer`,
           `gatsby portfolio`,
           `react`,
           `front-end`,
-          "back-end",
+          `back-end`,
         ]}
       />
       <Hero />
