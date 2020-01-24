@@ -19,6 +19,7 @@ const StyledFooter = styled.footer`
       svg {
         width: 2.5rem;
         height: 2.5rem;
+        fill: ${({ isDark }) => (isDark ? "#fff" : "#000")};
       }
 
       &:not(:last-child) {
@@ -38,8 +39,10 @@ const StyledFooter = styled.footer`
 `
 
 const Footer = () => {
+  const { value } = useDarkMode(false)
+
   return (
-    <StyledFooter>
+    <StyledFooter isDark={value}>
       <ul>
         {data.socialLinks.map((link, i) => (
           <li key={i}>

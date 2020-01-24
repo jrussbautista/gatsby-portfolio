@@ -10,12 +10,16 @@ const Row = styled.div`
   display: flex;
   flex-wrap: wrap;
   padding: 1.5rem;
-  margin: 2rem 0 6rem 0;
+  margin-top: 2rem;
+  margin-bottom: 6rem;
 `
 
 const Col = styled.div`
   width: 100%;
   margin-bottom: 5rem;
+  &:last-child {
+    margin-bottom: 0;
+  }
 `
 
 const Card = styled.div`
@@ -39,6 +43,10 @@ const Info = styled.div`
 
   .desc {
     font-size: 1.5rem;
+  }
+
+  p {
+    line-height: 2.2rem;
   }
 `
 

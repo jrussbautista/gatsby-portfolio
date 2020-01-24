@@ -46,6 +46,11 @@ const Header = styled.header`
       fill: ${props => props.theme.colors.dark};
     }
   }
+  .mobile-icon-menu {
+    @media ${props => props.theme.mediaQueries.medium} {
+      display: none;
+    }
+  }
   nav {
     display: flex;
     align-items: center;
@@ -91,6 +96,10 @@ const Menu = styled.div`
       isDark ? "var(--color-dark)" : "#fff"};
   }
 
+  @media ${props => props.theme.mediaQueries.medium} {
+    display: none;
+  }
+
   .menu-list {
     padding: 1rem 0;
     text-align: center;
@@ -101,8 +110,28 @@ const Menu = styled.div`
   }
 `
 
+const DesktopMenu = styled.div`
+  display: none;
+  align-items: center;
+
+  @media ${props => props.theme.mediaQueries.medium} {
+    display: flex;
+  }
+
+  .menu-list {
+    padding: 0 1rem;
+    a {
+      font-size: 1.6rem;
+    }
+  }
+
+  .switch-wrapper {
+    padding: 0 1rem;
+  }
+`
+
 export default () => {
-  const darkMode = useDarkMode(false)
+  const darkMode = useDarkMode(true)
   const [isOpenSideNav, setIsOpenSideNav] = useState(false)
   const sidebarRef = useRef()
 
@@ -135,10 +164,79 @@ export default () => {
         <div className="spacer"></div>
         <button
           onClick={() => setIsOpenSideNav(true)}
-          className={`btn-icon ${darkMode.value ? "fill-white" : "fill-dark "}`}
+          className={`btn-icon mobile-icon-menu ${
+            darkMode.value ? "fill-white" : "fill-dark "
+          }`}
         >
           <HamburgerIcon />
         </button>
+        <DesktopMenu className="desktop-menu">
+          <div className="menu-list">
+            <ScrollLink
+              smooth={true}
+              offset={-80}
+              duration={500}
+              to="project"
+              href="#project"
+            >
+              Projects
+            </ScrollLink>
+          </div>
+          <div className="menu-list">
+            <ScrollLink
+              smooth={true}
+              offset={-80}
+              duration={500}
+              to="skill"
+              href="#skill"
+            >
+              Skills
+            </ScrollLink>
+          </div>
+          <div className="menu-list">
+            <ScrollLink
+              smooth={true}
+              offset={-80}
+              duration={500}
+              to="work"
+              href="#work"
+            >
+              Work
+            </ScrollLink>
+          </div>
+          <div className="menu-list">
+            <ScrollLink
+              smooth={true}
+              offset={-80}
+              duration={500}
+              to="about"
+              href="#about"
+            >
+              About
+            </ScrollLink>
+          </div>
+          <div className="menu-list">
+            <ScrollLink
+              smooth={true}
+              offset={50}
+              duration={500}
+              to="contact"
+              href="#contact"
+            >
+              Contact
+            </ScrollLink>
+          </div>
+          <div className="switch-wrapper">
+            <Switch
+              onColor="#3d3d3d"
+              offColor="#3d3d3d"
+              onChange={darkMode.toggle}
+              checked={darkMode.value}
+              checkedIcon={<img src={moonIcon} alt="moon icon" />}
+              uncheckedIcon={<img src={sunIcon} alt="sun icon" />}
+            />
+          </div>
+        </DesktopMenu>
       </div>
       <Menu isDark={darkMode.value} isOpen={isOpenSideNav}>
         <aside ref={sidebarRef}>

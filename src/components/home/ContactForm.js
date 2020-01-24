@@ -14,6 +14,9 @@ const Container = styled.div`
 
 const Form = styled.form`
   padding: 0 1.5rem;
+  max-width: 80rem;
+  margin: 0 auto;
+
   .group {
     display: flex;
     flex-direction: column;

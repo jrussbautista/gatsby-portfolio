@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll"
 import styled from "styled-components"
 import avatar from "../../images/avatar.png"
 
@@ -60,6 +61,9 @@ const Hero = styled.section`
   }
 
   .btn {
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
     margin-top: 2rem;
     border: 1px solid var(--color-primary);
     border-radius: 6px;
@@ -100,7 +104,18 @@ export default () => {
           <h1> {data.site.siteMetadata.author}.</h1>
           <div className="intro-desc">{data.site.siteMetadata.intro}</div>
           <div className="sub">{data.site.siteMetadata.sub}</div>
-          <button className="btn"> See my works </button>
+          <ScrollLink
+            smooth={true}
+            offset={-80}
+            duration={500}
+            className="logo-title"
+            to="project"
+            href="#project"
+            className="btn"
+          >
+            {" "}
+            See my works{" "}
+          </ScrollLink>
         </div>
       </div>
     </Hero>
