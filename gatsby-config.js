@@ -8,6 +8,12 @@ module.exports = {
     sub: `I'm a full stack developer based in Manila, Philippines who loves to build websites and mobile applications.`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-145462597-2",
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,

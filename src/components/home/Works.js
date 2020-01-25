@@ -126,6 +126,12 @@ const WorkWrapper = styled.div`
 
     &__date {
       font-size: 1.3rem;
+
+      @media ${props => props.theme.mediaQueries.large} {
+        position: absolute;
+        left: 3rem;
+        top: 4rem;
+      }
     }
   }
 `
@@ -144,12 +150,13 @@ const Works = () => {
                   <div className="stepper__timeline-heading">
                     {work.company}
                   </div>
+                  <div className="stepper__date">{work.date}</div>
                 </div>
               </div>
               <div className="stepper__info">
                 <div className="stepper__body">
                   <div className="stepper__title"> {work.title}</div>
-                  <div className="stepper__date">{work.date}</div>
+
                   <div className="stepper__sub"> {work.description} </div>
                 </div>
               </div>
