@@ -21,7 +21,7 @@ const Hero = styled.section`
     padding: 3rem 5rem;
     text-align: center;
 
-    @media ${props => props.theme.mediaQueries.medium} {
+    @media ${props => props.theme.mediaQueries.large} {
       order: 2;
     }
   }
@@ -35,7 +35,7 @@ const Hero = styled.section`
     display: flex;
     flex-direction: column;
 
-    @media ${props => props.theme.mediaQueries.medium} {
+    @media ${props => props.theme.mediaQueries.large} {
       flex-direction: row;
     }
   }
@@ -74,6 +74,10 @@ const Hero = styled.section`
     background-color: transparent;
     color: var(--color-primary);
     cursor: pointer;
+
+    &:hover {
+      background-color: rgba(100, 255, 218, 0.07);
+    }
   }
 `
 

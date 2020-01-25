@@ -51,7 +51,7 @@ const Card = styled.div`
 export default () => {
   return (
     <div id="skill">
-      <Heading title="My Stacks " />
+      <Heading title="What I Love To Used" />
       <div style={{ padding: "1.5rem" }}>
         <Wrapper>
           <Card>

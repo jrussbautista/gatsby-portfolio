@@ -47,7 +47,7 @@ const Header = styled.header`
     }
   }
   .mobile-icon-menu {
-    @media ${props => props.theme.mediaQueries.medium} {
+    @media ${props => props.theme.mediaQueries.large} {
       display: none;
     }
   }
@@ -97,7 +97,7 @@ const Menu = styled.div`
       isDark ? "var(--color-dark)" : "#fff"};
   }
 
-  @media ${props => props.theme.mediaQueries.medium} {
+  @media ${props => props.theme.mediaQueries.large} {
     display: none;
   }
 
@@ -115,7 +115,7 @@ const DesktopMenu = styled.div`
   display: none;
   align-items: center;
 
-  @media ${props => props.theme.mediaQueries.medium} {
+  @media ${props => props.theme.mediaQueries.large} {
     display: flex;
   }
 
