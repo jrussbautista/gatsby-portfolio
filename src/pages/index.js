@@ -6,6 +6,7 @@ import Hero from "../components/home/Hero"
 import Projects from "../components/home/Projects"
 import ContactForm from "../components/home/ContactForm"
 import About from "../components/home/About"
+import Works from "../components/home/Works"
 
 const IndexPage = ({ data }) => {
   return (
@@ -22,6 +23,7 @@ const IndexPage = ({ data }) => {
       />
       <Hero />
       <Projects />
+      <Works />
       <Skills />
       <About />
       <ContactForm />
