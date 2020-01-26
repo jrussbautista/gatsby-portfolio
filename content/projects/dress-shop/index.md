@@ -1,6 +1,6 @@
 ---
 title: "Dress Shop"
-website: "https://github.com/jrussumbrella/dress-shop"
+website: "https://dress-shop.now.sh/"
 source: "https://github.com/jrussumbrella/dress-shop"
 stack: "Next js, React js, MongoDB, Stripe"
 image: "dress-shop.png"

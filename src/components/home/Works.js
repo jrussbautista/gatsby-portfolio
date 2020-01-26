@@ -116,6 +116,10 @@ const WorkWrapper = styled.div`
     &__timeline-heading {
       font-size: 1.7rem;
       font-weight: 600;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 100%;
+      text-overflow: ellipsis;
 
       @media ${props => props.theme.mediaQueries.large} {
         position: absolute;

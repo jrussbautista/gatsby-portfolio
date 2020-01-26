@@ -71,8 +71,8 @@ export default () => {
             <div className="card-title"> Back End </div>
             <Stacks>
               <li> Node JS</li>
-              <li> Express Js </li>
-              <li> Restful Api </li>
+              <li> Express JS </li>
+              <li> Restful API</li>
               <li> GraphQL </li>
             </Stacks>
           </Card>
@@ -83,7 +83,7 @@ export default () => {
             <Stacks>
               <li> MySQL</li>
               <li> Firebase </li>
-              <li> Mongo Db </li>
+              <li> MongoDb </li>
             </Stacks>
           </Card>
         </Wrapper>
