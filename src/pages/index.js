@@ -23,8 +23,8 @@ const IndexPage = ({ data }) => {
       />
       <Hero />
       <Projects />
-      <Works />
       <Skills />
+      <Works />
       <About />
       <ContactForm />
     </Layout>

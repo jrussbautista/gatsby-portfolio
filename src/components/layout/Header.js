@@ -249,6 +249,7 @@ export default () => {
                 duration={500}
                 to="project"
                 href="#project"
+                onClick={() => setIsOpenSideNav(false)}
               >
                 Projects
               </ScrollLink>
@@ -260,6 +261,7 @@ export default () => {
                 duration={500}
                 to="skill"
                 href="#skill"
+                onClick={() => setIsOpenSideNav(false)}
               >
                 Skills
               </ScrollLink>
@@ -271,6 +273,7 @@ export default () => {
                 duration={500}
                 to="work"
                 href="#work"
+                onClick={() => setIsOpenSideNav(false)}
               >
                 Work
               </ScrollLink>
@@ -282,6 +285,7 @@ export default () => {
                 duration={500}
                 to="about"
                 href="#about"
+                onClick={() => setIsOpenSideNav(false)}
               >
                 About
               </ScrollLink>
@@ -293,6 +297,7 @@ export default () => {
                 duration={500}
                 to="contact"
                 href="#contact"
+                onClick={() => setIsOpenSideNav(false)}
               >
                 Contact
               </ScrollLink>
