@@ -2,6 +2,7 @@ import React from "react"
 import Heading from "../common/Heading"
 import me from "../../images/me.jpg"
 import styled from "styled-components"
+import { about } from "../../../content/data.json"
 
 const StyledAbout = styled.div`
   padding: 1rem 1.5rem 6rem 1.5rem;
@@ -9,12 +10,13 @@ const StyledAbout = styled.div`
   .desc {
     font-size: 1.6rem;
     padding: 1rem 0;
+    line-height: 1.5;
   }
 
   .grid {
     display: grid;
     grid-gap: 1.5rem;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   }
 
   .img {
@@ -37,12 +39,7 @@ const About = () => {
       <Heading title={`About Me`} />
       <StyledAbout>
         <div className="grid">
-          <div className="desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis
-            possimus veniam, et impedit ea voluptatibus a soluta inventore nam
-            expedita corporis dolores veritatis optio ducimus deserunt,
-            recusandae vero sapiente voluptate!
-          </div>
+          <div className="desc">{about.description}</div>
           <div className="img-wrapper">
             <img className="img" src={me} alt="me" />
           </div>
