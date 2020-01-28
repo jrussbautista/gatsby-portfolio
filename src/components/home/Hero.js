@@ -105,7 +105,7 @@ export default () => {
         </div>
         <div style={{ flex: 1 }}>
           <div className="intro-text"> Hi. I'm</div>
-          <h1> {data.site.siteMetadata.author}.</h1>
+          <h1>{data.site.siteMetadata.author}.</h1>
           <div className="intro-desc">{data.site.siteMetadata.intro}</div>
           <div className="sub">{data.site.siteMetadata.sub}</div>
           <ScrollLink
