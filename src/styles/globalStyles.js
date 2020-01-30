@@ -43,16 +43,18 @@ export default createGlobalStyle`
       margin: 0;
       font-weight: 400;
 
-
-
-      &.light-mode {
+      &.light {
           background-color: #fff;
           color: rgba(10,10,10,0.9);
+          --bg: #fff;
+          --fill: #121212;
         }
 
-        &.dark-mode {
+        &.dark {
           background-color: #121212;
+          --bg: #121212;
           color: #fff;
+          --fill: #fff;
         }
     }
 

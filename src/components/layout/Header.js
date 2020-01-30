@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react"
-import { Link as ScrollLink, animateScroll as scroll } from "react-scroll"
-import useDarkMode from "use-dark-mode"
+import { Link as ScrollLink } from "react-scroll"
+import { ThemeToggler } from "gatsby-plugin-dark-mode"
 import styled from "styled-components"
 import HamburgerIcon from "../icons/hamburger"
 import Switch from "react-switch"
@@ -14,7 +14,7 @@ const Header = styled.header`
   right: 0;
   z-index: 20;
   height: 7rem;
-  background-color: ${props => (props.isDark ? "#121212" : "#fff")};
+  background-color: var(--bg);
   box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.06);
 
   .wrapper {
@@ -43,7 +43,7 @@ const Header = styled.header`
       transform: rotate(180deg);
     }
     rect {
-      fill: ${props => props.theme.colors.dark};
+      fill: var(--fill);
     }
   }
   .mobile-icon-menu {
@@ -93,8 +93,7 @@ const Menu = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: ${({ isDark }) =>
-      isDark ? "var(--color-dark)" : "#fff"};
+    background-color: var(--bg);
   }
 
   @media ${props => props.theme.mediaQueries.large} {
@@ -132,8 +131,6 @@ const DesktopMenu = styled.div`
 `
 
 export default () => {
-  const darkMode = useDarkMode()
-
   const [isOpenSideNav, setIsOpenSideNav] = useState(false)
   const sidebarRef = useRef()
 
@@ -149,7 +146,7 @@ export default () => {
   }
 
   return (
-    <Header isDark={darkMode.value}>
+    <Header>
       <div className="wrapper">
         <div>
           <ScrollLink
@@ -166,9 +163,7 @@ export default () => {
         <div className="spacer"></div>
         <button
           onClick={() => setIsOpenSideNav(true)}
-          className={`btn-icon mobile-icon-menu ${
-            darkMode.value ? "fill-white" : "fill-dark "
-          }`}
+          className={`btn-icon mobile-icon-menu`}
         >
           <HamburgerIcon />
         </button>
@@ -229,18 +224,22 @@ export default () => {
             </ScrollLink>
           </div>
           <div className="switch-wrapper">
-            <Switch
-              onColor="#3d3d3d"
-              offColor="#3d3d3d"
-              onChange={darkMode.toggle}
-              checked={darkMode.value}
-              checkedIcon={<img src={moonIcon} alt="moon icon" />}
-              uncheckedIcon={<img src={sunIcon} alt="sun icon" />}
-            />
+            <ThemeToggler>
+              {({ theme, toggleTheme }) => (
+                <Switch
+                  onColor="#3d3d3d"
+                  offColor="#3d3d3d"
+                  onChange={checked => toggleTheme(checked ? "dark" : "light")}
+                  checked={theme === "dark"}
+                  checkedIcon={<img src={moonIcon} alt="moon icon" />}
+                  uncheckedIcon={<img src={sunIcon} alt="sun icon" />}
+                />
+              )}
+            </ThemeToggler>
           </div>
         </DesktopMenu>
       </div>
-      <Menu isDark={darkMode.value} isOpen={isOpenSideNav}>
+      <Menu isOpen={isOpenSideNav}>
         <aside ref={sidebarRef}>
           <div>
             <div className="menu-list">
@@ -304,14 +303,20 @@ export default () => {
               </ScrollLink>
             </div>
             <div className="switch-wrapper">
-              <Switch
-                onColor="#3d3d3d"
-                offColor="#3d3d3d"
-                onChange={darkMode.toggle}
-                checked={darkMode.value}
-                checkedIcon={<img src={moonIcon} alt="moon icon" />}
-                uncheckedIcon={<img src={sunIcon} alt="sun icon" />}
-              />
+              <ThemeToggler>
+                {({ theme, toggleTheme }) => (
+                  <Switch
+                    onColor="#3d3d3d"
+                    offColor="#3d3d3d"
+                    onChange={checked =>
+                      toggleTheme(checked ? "dark" : "light")
+                    }
+                    checked={theme === "dark"}
+                    checkedIcon={<img src={moonIcon} alt="moon icon" />}
+                    uncheckedIcon={<img src={sunIcon} alt="sun icon" />}
+                  />
+                )}
+              </ThemeToggler>
             </div>
           </div>
         </aside>

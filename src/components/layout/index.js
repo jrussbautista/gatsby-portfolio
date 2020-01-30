@@ -2,7 +2,6 @@ import React from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
 import { ThemeProvider } from "styled-components"
-import { useStaticQuery, graphql } from "gatsby"
 import GlobalStyles from "../../styles/globalStyles"
 import Header from "./Header"
 import theme from "../../utils/theme"
@@ -14,16 +13,6 @@ const Container = styled.main`
 `
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
   return (
     <ThemeProvider theme={theme}>
       <>

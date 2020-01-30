@@ -4,7 +4,6 @@ import Github from "../icons/github"
 import CodePen from "../icons/codepen"
 import LinkedIn from "../icons/linkedin"
 import data from "../../../content/data.json"
-import useDarkMode from "use-dark-mode"
 
 const StyledFooter = styled.footer`
   padding: 3rem 2rem;
@@ -19,7 +18,7 @@ const StyledFooter = styled.footer`
       svg {
         width: 2.5rem;
         height: 2.5rem;
-        fill: ${({ isDark }) => (isDark ? "#fff" : "#000")};
+        fill: var(--fill);
       }
 
       &:not(:last-child) {
@@ -39,10 +38,8 @@ const StyledFooter = styled.footer`
 `
 
 const Footer = () => {
-  const { value } = useDarkMode()
-
   return (
-    <StyledFooter isDark={value}>
+    <StyledFooter>
       <ul>
         {data.socialLinks.map((link, i) => (
           <li key={i}>
