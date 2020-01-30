@@ -96,6 +96,7 @@ const Menu = styled.div`
       width: 100%;
       flex-direction: row;
       transform: translateX(0);
+      transition: none;
     }
   }
 
