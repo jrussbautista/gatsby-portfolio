@@ -132,7 +132,8 @@ const DesktopMenu = styled.div`
 `
 
 export default () => {
-  const darkMode = useDarkMode(false)
+  const darkMode = useDarkMode()
+
   const [isOpenSideNav, setIsOpenSideNav] = useState(false)
   const sidebarRef = useRef()
 

@@ -39,7 +39,7 @@ const StyledFooter = styled.footer`
 `
 
 const Footer = () => {
-  const { value } = useDarkMode(false)
+  const { value } = useDarkMode()
 
   return (
     <StyledFooter isDark={value}>
