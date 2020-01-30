@@ -1,11 +1,8 @@
 import React, { useState, useEffect, useRef } from "react"
 import { Link as ScrollLink } from "react-scroll"
-import { ThemeToggler } from "gatsby-plugin-dark-mode"
 import styled from "styled-components"
 import HamburgerIcon from "../icons/hamburger"
-import Switch from "react-switch"
-import sunIcon from "../../images/sun-icon.svg"
-import moonIcon from "../../images/moon-icon.svg"
+import DarkModeSwitch from "../common/DarkModeSwitch"
 
 const Header = styled.header`
   position: fixed;
@@ -80,7 +77,7 @@ const Overlay = styled.div`
 `
 
 const Menu = styled.div`
-  aside {
+  .menu-wrapper {
     transform: translateX(${({ isOpen }) => (isOpen ? 0 : "100%")});
     transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
     position: fixed;
@@ -94,39 +91,24 @@ const Menu = styled.div`
     justify-content: center;
     align-items: center;
     background-color: var(--bg);
-  }
-
-  @media ${props => props.theme.mediaQueries.large} {
-    display: none;
+    @media ${props => props.theme.mediaQueries.large} {
+      position: static;
+      width: 100%;
+      flex-direction: row;
+      transform: translateX(0);
+    }
   }
 
   .menu-list {
-    padding: 1rem 0;
+    padding: 1rem;
     text-align: center;
 
     a {
       font-size: 2.2rem;
+      @media ${props => props.theme.mediaQueries.large} {
+        font-size: 1.6rem;
+      }
     }
-  }
-`
-
-const DesktopMenu = styled.div`
-  display: none;
-  align-items: center;
-
-  @media ${props => props.theme.mediaQueries.large} {
-    display: flex;
-  }
-
-  .menu-list {
-    padding: 0 1rem;
-    a {
-      font-size: 1.6rem;
-    }
-  }
-
-  .switch-wrapper {
-    padding: 0 1rem;
   }
 `
 
@@ -167,81 +149,8 @@ export default () => {
         >
           <HamburgerIcon />
         </button>
-        <DesktopMenu className="desktop-menu">
-          <div className="menu-list">
-            <ScrollLink
-              smooth={true}
-              offset={-80}
-              duration={500}
-              to="project"
-              href="#project"
-            >
-              Projects
-            </ScrollLink>
-          </div>
-          <div className="menu-list">
-            <ScrollLink
-              smooth={true}
-              offset={-80}
-              duration={500}
-              to="skill"
-              href="#skill"
-            >
-              Skills
-            </ScrollLink>
-          </div>
-          <div className="menu-list">
-            <ScrollLink
-              smooth={true}
-              offset={-80}
-              duration={500}
-              to="work"
-              href="#work"
-            >
-              Work
-            </ScrollLink>
-          </div>
-          <div className="menu-list">
-            <ScrollLink
-              smooth={true}
-              offset={-80}
-              duration={500}
-              to="about"
-              href="#about"
-            >
-              About
-            </ScrollLink>
-          </div>
-          <div className="menu-list">
-            <ScrollLink
-              smooth={true}
-              offset={50}
-              duration={500}
-              to="contact"
-              href="#contact"
-            >
-              Contact
-            </ScrollLink>
-          </div>
-          <div className="switch-wrapper">
-            <ThemeToggler>
-              {({ theme, toggleTheme }) => (
-                <Switch
-                  onColor="#3d3d3d"
-                  offColor="#3d3d3d"
-                  onChange={checked => toggleTheme(checked ? "dark" : "light")}
-                  checked={theme === "dark"}
-                  checkedIcon={<img src={moonIcon} alt="moon icon" />}
-                  uncheckedIcon={<img src={sunIcon} alt="sun icon" />}
-                />
-              )}
-            </ThemeToggler>
-          </div>
-        </DesktopMenu>
-      </div>
-      <Menu isOpen={isOpenSideNav}>
-        <aside ref={sidebarRef}>
-          <div>
+        <Menu isOpen={isOpenSideNav}>
+          <div className="menu-wrapper" ref={sidebarRef}>
             <div className="menu-list">
               <ScrollLink
                 smooth={true}
@@ -303,24 +212,12 @@ export default () => {
               </ScrollLink>
             </div>
             <div className="switch-wrapper">
-              <ThemeToggler>
-                {({ theme, toggleTheme }) => (
-                  <Switch
-                    onColor="#3d3d3d"
-                    offColor="#3d3d3d"
-                    onChange={checked =>
-                      toggleTheme(checked ? "dark" : "light")
-                    }
-                    checked={theme === "dark"}
-                    checkedIcon={<img src={moonIcon} alt="moon icon" />}
-                    uncheckedIcon={<img src={sunIcon} alt="sun icon" />}
-                  />
-                )}
-              </ThemeToggler>
+              <DarkModeSwitch />
             </div>
           </div>
-        </aside>
-      </Menu>
+        </Menu>
+      </div>
+
       {isOpenSideNav && <Overlay ref={sidebarRef} />}
     </Header>
   )

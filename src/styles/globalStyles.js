@@ -42,11 +42,12 @@ export default createGlobalStyle`
       font-family: 'Montserrat', 'sans-serif';
       margin: 0;
       font-weight: 400;
+      transition: 'color 0.2s ease-out, background 0.2s ease-out';
+      --bg: #fff;
 
       &.light {
           background-color: #fff;
           color: rgba(10,10,10,0.9);
-          --bg: #fff;
           --fill: #121212;
         }
 
