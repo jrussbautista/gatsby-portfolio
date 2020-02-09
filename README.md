@@ -1,4 +1,12 @@
-<h1> My portfolio built with Gatsby js</h1>
+<h1> My Portfolio </h1>
+* Showcasing list of projects I built
+
+### [Live demo](https://jrussbautista.netlify.com/)
+
+## Stacks
+
+- Gatsby js
+- Styled Components
 
 ## Installation
 
