@@ -63,6 +63,7 @@ export default () => {
               <li> Javascript </li>
               <li> React JS </li>
               <li> Redux </li>
+              <li> Gatsby JS</li>
               <li> Next JS</li>
             </Stacks>
           </Card>
@@ -72,11 +73,9 @@ export default () => {
             <Stacks>
               <li> Node JS</li>
               <li> Express JS </li>
-              <li> Restful API</li>
               <li> GraphQL </li>
             </Stacks>
           </Card>
-
           <Card>
             <Database />
             <div className="card-title"> Database</div>

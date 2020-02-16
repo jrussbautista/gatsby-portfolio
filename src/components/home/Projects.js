@@ -207,16 +207,31 @@ export default () => {
         {items.edges.map(item => (
           <Col key={item.node.id}>
             <Card>
-              <ImageWrapper>
-                <Img
-                  fluid={
-                    item.node.childMarkdownRemark.frontmatter.image
-                      .childImageSharp.fluid
-                  }
-                />
-              </ImageWrapper>
+              <a
+                href={item.node.childMarkdownRemark.frontmatter.website}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <ImageWrapper>
+                  <Img
+                    fluid={
+                      item.node.childMarkdownRemark.frontmatter.image
+                        .childImageSharp.fluid
+                    }
+                  />
+                </ImageWrapper>
+              </a>
               <Info>
-                <Name> {item.node.childMarkdownRemark.frontmatter.title} </Name>
+                <a
+                  href={item.node.childMarkdownRemark.frontmatter.website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Name>
+                    {" "}
+                    {item.node.childMarkdownRemark.frontmatter.title}{" "}
+                  </Name>
+                </a>
                 <div
                   className="desc"
                   dangerouslySetInnerHTML={{

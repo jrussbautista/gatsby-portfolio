@@ -42,7 +42,7 @@ export default createGlobalStyle`
       font-family: 'Montserrat', 'sans-serif';
       margin: 0;
       font-weight: 400;
-      transition: 'color 0.2s ease-out, background 0.2s ease-out';
+      transition: color 0.2s ease-out, background 0.2s ease-out;
       --bg: #fff;
 
       &.light {
