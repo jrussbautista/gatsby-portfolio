@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `James Russel C. Bautista | Portfolio`,
-    description: `Hi Im James Russel C. Bautista. Im a Ful stack developer. I build things for web and mobile`,
+    description: `Hi Im James Russel C. Bautista. Im a Ful stack developer. I build stuff.`,
     author: `James Russel C. Bautista`,
     job: `Full Stack Software Engineer`,
     intro: `I build stuff.`,
