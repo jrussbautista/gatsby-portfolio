@@ -2,7 +2,6 @@ import { createGlobalStyle } from "styled-components"
 
 export default createGlobalStyle`
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap');
 
 
     html {
@@ -39,7 +38,7 @@ export default createGlobalStyle`
     }
 
     body {
-      font-family: 'Montserrat', 'sans-serif';
+      font-family: 'Montserrat', sans-serif;
       margin: 0;
       font-weight: 400;
       transition: color 0.2s ease-out, background 0.2s ease-out;
