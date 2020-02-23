@@ -29,5 +29,67 @@
       "company": "Advanced Techinnovations Systems",
       "description": " Works as junior software engineer and help senior developer in developing the Hanap Trabaho web application."
     }
+  ],
+  "skills": [
+    {
+      "type": "front-end",
+      "name": "Front End",
+      "list": [
+        {
+          "name": "HTML"
+        },
+        {
+          "name": "CSS/ SCSS"
+        },
+        {
+          "name": "Javascript"
+        },
+        {
+          "name": "React JS"
+        },
+        {
+          "name": "Redux"
+        },
+        {
+          "name": "Gatsby JS"
+        },
+        {
+          "name": "Next Js"
+        },
+        {
+          "name": "React Native"
+        }
+      ]
+    },
+    {
+      "type": "back-end",
+      "name": "Back End",
+      "list": [
+        {
+          "name": "Node JS"
+        },
+        {
+          "name": "Express JS"
+        },
+        {
+          "name": "GraphQL"
+        }
+      ]
+    },
+    {
+      "type": "database",
+      "name": "Database",
+      "list": [
+        {
+          "name": "MySQL"
+        },
+        {
+          "name": "Firebase / Cloud Firestore"
+        },
+        {
+          "name": "MongoDB"
+        }
+      ]
+    }
   ]
 }

@@ -24,9 +24,9 @@ const Card = styled.div`
   border-radius: 15px;
   overflow: hidden;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr));
+  grid-template-columns: 1fr;
   @media ${props => props.theme.mediaQueries.large} {
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-columns: 1fr 1fr;
   }
   grid-gap: 2rem;
 `

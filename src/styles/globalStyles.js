@@ -2,8 +2,6 @@ import { createGlobalStyle } from "styled-components"
 
 export default createGlobalStyle`
 
-
-
     html {
       box-sizing: border-box;
       line-height: 1.15;
@@ -38,7 +36,7 @@ export default createGlobalStyle`
     }
 
     body {
-      font-family: 'Montserrat', sans-serif;
+      font-family: Montserrat, sans-serif;
       margin: 0;
       font-weight: 400;
       transition: color 0.2s ease-out, background 0.2s ease-out;

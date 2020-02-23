@@ -4,6 +4,7 @@ import Heading from "../common/Heading"
 import FrontendIcon from "../icons/frontend"
 import Backend from "../icons/backend"
 import Database from "../icons/database"
+import { skills } from "../../../content/data.json"
 
 const Wrapper = styled.div`
   margin: 2rem 0 6rem 0;
@@ -54,37 +55,19 @@ export default () => {
       <Heading title="What I Love To Used" />
       <div style={{ padding: "1.5rem" }}>
         <Wrapper>
-          <Card>
-            <FrontendIcon />
-            <div className="card-title"> Front End </div>
-            <Stacks>
-              <li> HTML </li>
-              <li> CSS/ SCSS</li>
-              <li> Javascript </li>
-              <li> React JS </li>
-              <li> Redux </li>
-              <li> Gatsby JS</li>
-              <li> Next JS</li>
-            </Stacks>
-          </Card>
-          <Card>
-            <Backend />
-            <div className="card-title"> Back End </div>
-            <Stacks>
-              <li> Node JS</li>
-              <li> Express JS </li>
-              <li> GraphQL </li>
-            </Stacks>
-          </Card>
-          <Card>
-            <Database />
-            <div className="card-title"> Database</div>
-            <Stacks>
-              <li> MySQL</li>
-              <li> Firebase </li>
-              <li> MongoDb </li>
-            </Stacks>
-          </Card>
+          {skills.map((skill, i) => (
+            <Card key={i}>
+              {skill.type === "front-end" && <FrontendIcon />}
+              {skill.type === "back-end" && <Backend />}
+              {skill.type === "database" && <Database />}
+              <div className="card-title"> {skill.name} </div>
+              <Stacks>
+                {skill.list.map((item, i) => (
+                  <li key={i}> {item.name} </li>
+                ))}
+              </Stacks>
+            </Card>
+          ))}
         </Wrapper>
       </div>
     </div>
