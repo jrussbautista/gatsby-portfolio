@@ -42,13 +42,13 @@ export default createGlobalStyle`
       transition: color 0.2s ease-out, background 0.2s ease-out;
       --bg: #fff;
 
-      &.light {
+      &.light-mode {
           background-color: #fff;
           color: rgba(10,10,10,0.9);
           --fill: #121212;
         }
 
-        &.dark {
+        &.dark-mode {
           background-color: #121212;
           --bg: #121212;
           color: #fff;

@@ -117,8 +117,7 @@ export default () => {
             href="#project"
             className="btn"
           >
-            {" "}
-            See my works{" "}
+            See my works
           </ScrollLink>
         </div>
       </div>
