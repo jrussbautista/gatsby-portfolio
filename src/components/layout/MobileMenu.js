@@ -1,7 +1,6 @@
 import React from "react"
 import { Link as ScrollLink } from "react-scroll"
 import styled from "styled-components"
-import DarkModeSwitch from "../common/DarkModeSwitch"
 
 const Menu = styled.div`
   .menu-wrapper {
@@ -96,9 +95,6 @@ const MobileMenu = ({ isOpenSideNav, setIsOpenSideNav }) => {
           >
             Contact
           </ScrollLink>
-        </div>
-        <div className="switch-wrapper">
-          <DarkModeSwitch />
         </div>
       </div>
     </Menu>

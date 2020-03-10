@@ -1,7 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 import { Link as ScrollLink } from "react-scroll"
-import DarkModeSwitch from "../common/DarkModeSwitch"
 
 const DesktopMenu = () => {
   const StyledDesktopMenu = styled.div`
@@ -15,9 +14,6 @@ const DesktopMenu = () => {
       a {
         font-size: 1.6rem;
       }
-    }
-    .switch-wrapper {
-      padding: 0 1rem;
     }
   `
 
@@ -77,9 +73,6 @@ const DesktopMenu = () => {
         >
           Contact
         </ScrollLink>
-      </div>
-      <div className="switch-wrapper">
-        <DarkModeSwitch />
       </div>
     </StyledDesktopMenu>
   )
