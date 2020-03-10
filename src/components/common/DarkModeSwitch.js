@@ -5,7 +5,9 @@ import sunIcon from "../../images/sun-icon.svg"
 import moonIcon from "../../images/moon-icon.svg"
 
 const DarkModeSwitch = () => {
-  const darkMode = useDarkMode(false)
+  const initVal = localStorage.getItem("darkMode")
+
+  const darkMode = useDarkMode(initVal)
 
   return (
     <Switch
