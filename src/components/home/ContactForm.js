@@ -53,9 +53,14 @@ const Form = styled.form`
     background: transparent;
   }
 
+  .btn-wrapper {
+    display: flex;
+    justify-content: flex-end;
+  }
+
   .btn {
     border-radius: 0.4rem;
-    height: 6rem;
+    height: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -65,6 +70,7 @@ const Form = styled.form`
     border: 1px solid var(--color-primary);
     cursor: pointer;
     background: transparent;
+    width: 18rem;
   }
 `
 
@@ -200,9 +206,11 @@ export default () => {
           ) : null}
         </div>
         <div className="group">
-          <button type="submit" disabled={submit} className="btn">
-            {submit ? "Sending..." : "Submit"}
-          </button>
+          <div className="btn-wrapper">
+            <button type="submit" disabled={submit} className="btn">
+              {submit ? "Sending..." : "Submit"}
+            </button>
+          </div>
         </div>
       </Form>
     </Container>
