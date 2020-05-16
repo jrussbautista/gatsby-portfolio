@@ -142,7 +142,7 @@ const Buttons = styled.div`
 `
 
 export default () => {
-  const [active, setActive] = useState("All")
+  // const [active, setActive] = useState("All")
 
   const { allFile: items } = useStaticQuery(graphql`
     query {
@@ -152,6 +152,8 @@ export default () => {
           extension: { eq: "md" }
           relativeDirectory: { regex: "/projects/" }
         }
+
+        sort: { fields: accessTime, order: DESC }
       ) {
         edges {
           node {
@@ -203,6 +205,7 @@ export default () => {
           Mobile
         </div>
       </Tabs> */}
+
       <Row>
         {items.edges.map(item => (
           <Col key={item.node.id}>

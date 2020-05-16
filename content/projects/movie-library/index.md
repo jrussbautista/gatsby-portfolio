@@ -1,5 +1,6 @@
 ---
 title: "Movie Library"
+date: "2019-03-25"
 website: "https://movie-db-app.netlify.com"
 source: "https://github.com/jrussumbrella/react-movie-library"
 stack: "React js, TMDB API"

@@ -20,7 +20,7 @@
     {
       "title": "Web Developer",
       "date": "August 2019- Present",
-      "description": "Responsible in doing backend, mostly creating api's for our product. Able to help the company to transition to paper from paperless by automating systems and making it accessible online.",
+      "description": "Responsible in doing backend,  mostly creating api's for our product. Able to help the company to transition to paper from paperless by automating systems and making it accessible online.",
       "company": "Sta. Clara International Corp."
     },
     {
@@ -60,7 +60,7 @@
           "name": "Redux"
         },
         {
-          "name": "Next Js"
+          "name": "Next JS"
         }
       ]
     },
@@ -83,6 +83,9 @@
       "type": "database",
       "name": "Database",
       "list": [
+        {
+          "name": "PostgreSQL"
+        },
         {
           "name": "MySQL"
         },

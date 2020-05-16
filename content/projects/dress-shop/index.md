@@ -1,8 +1,9 @@
 ---
 title: "Dress Shop"
+date: "2020-01-10"
 website: "https://dress-shop.now.sh/"
 source: "https://github.com/jrussumbrella/dress-shop"
-stack: "Next js, React js, MongoDB, Stripe"
+stack: "Next js, React js, MongoDB, Stripe, Cloudinary"
 image: "dress-thumbnail.png"
 ---
 
