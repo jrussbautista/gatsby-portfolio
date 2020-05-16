@@ -1,6 +1,6 @@
 ---
 title: "Easy Recipe"
-date: "2020-05-16"
+date: "2019-12-16"
 website: "https://easy-recipe.netlify.app/"
 source: "https://github.com/jrussumbrella/easy-recipe"
 stack: "React js, SCSS, Node js, MongoDB, GraphQL, Cloudinary"

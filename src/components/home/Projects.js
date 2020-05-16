@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import styled from "styled-components"
@@ -78,24 +78,24 @@ const StacksWrapper = styled.div`
   }
 `
 
-const Tabs = styled.div`
-  display: flex;
-  padding: 1rem;
+// const Tabs = styled.div`
+//   display: flex;
+//   padding: 1rem;
 
-  .tab-list {
-    flex: 1;
-    text-align: center;
-    padding: 1rem 0;
-    cursor: pointer;
-    font-size: 1.8rem;
-  }
+//   .tab-list {
+//     flex: 1;
+//     text-align: center;
+//     padding: 1rem 0;
+//     cursor: pointer;
+//     font-size: 1.8rem;
+//   }
 
-  .active {
-    font-weight: 600;
-    color: ${props => props.theme.colors.primary};
-    border-bottom: 2px solid ${props => props.theme.colors.primary};
-  }
-`
+//   .active {
+//     font-weight: 600;
+//     color: ${props => props.theme.colors.primary};
+//     border-bottom: 2px solid ${props => props.theme.colors.primary};
+//   }
+// `
 
 const Buttons = styled.div`
   padding-top: 2rem;
@@ -142,37 +142,25 @@ const Buttons = styled.div`
 `
 
 export default () => {
-  // const [active, setActive] = useState("All")
-
-  const { allFile: items } = useStaticQuery(graphql`
+  const { allMarkdownRemark: items } = useStaticQuery(graphql`
     query {
-      allFile(
-        filter: {
-          sourceInstanceName: { eq: "content" }
-          extension: { eq: "md" }
-          relativeDirectory: { regex: "/projects/" }
-        }
-
-        sort: { fields: accessTime, order: DESC }
-      ) {
+      allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
         edges {
           node {
             id
-            childMarkdownRemark {
-              frontmatter {
-                title
-                website
-                source
-                stack
-                image {
-                  childImageSharp {
-                    fluid(maxWidth: 800, quality: 80) {
-                      ...GatsbyImageSharpFluid_tracedSVG
-                    }
+            html
+            frontmatter {
+              title
+              website
+              stack
+              source
+              image {
+                childImageSharp {
+                  fluid(maxWidth: 800, quality: 90) {
+                    ...GatsbyImageSharpFluid_tracedSVG
                   }
                 }
               }
-              html
             }
           }
         }
@@ -183,76 +171,46 @@ export default () => {
   return (
     <div id="project" style={{ margin: "3rem 0" }}>
       <Heading title="Projects I Built" />
-      {/* <Tabs>
-        <div
-          className={`tab-list ${active === "All" ? "active" : ""}`}
-          onClick={() => setActive("All")}
-        >
-          {" "}
-          All{" "}
-        </div>
-        <div
-          className={`tab-list ${active === "Web" ? "active" : ""}`}
-          onClick={() => setActive("Web")}
-        >
-          {" "}
-          Web{" "}
-        </div>
-        <div
-          className={`tab-list ${active === "Mobile" ? "active" : ""}`}
-          onClick={() => setActive("Mobile")}
-        >
-          Mobile
-        </div>
-      </Tabs> */}
 
       <Row>
         {items.edges.map(item => (
           <Col key={item.node.id}>
             <Card>
               <a
-                href={item.node.childMarkdownRemark.frontmatter.website}
+                href={item.node.frontmatter.website}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <ImageWrapper>
                   <Img
-                    fluid={
-                      item.node.childMarkdownRemark.frontmatter.image
-                        .childImageSharp.fluid
-                    }
+                    fluid={item.node.frontmatter.image.childImageSharp.fluid}
                   />
                 </ImageWrapper>
               </a>
               <Info>
                 <a
-                  href={item.node.childMarkdownRemark.frontmatter.website}
+                  href={item.node.frontmatter.website}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <Name>
-                    {" "}
-                    {item.node.childMarkdownRemark.frontmatter.title}{" "}
-                  </Name>
+                  <Name> {item.node.frontmatter.title} </Name>
                 </a>
                 <div
                   className="desc"
                   dangerouslySetInnerHTML={{
-                    __html: item.node.childMarkdownRemark.html,
+                    __html: item.node.html,
                   }}
                 ></div>
                 <StacksWrapper>
                   <ul>
-                    {item.node.childMarkdownRemark.frontmatter.stack
-                      .split(",")
-                      .map((stack, i) => (
-                        <li key={i}> {stack} </li>
-                      ))}
+                    {item.node.frontmatter.stack.split(",").map((stack, i) => (
+                      <li key={i}> {stack} </li>
+                    ))}
                   </ul>
                 </StacksWrapper>
                 <Buttons>
                   <a
-                    href={item.node.childMarkdownRemark.frontmatter.website}
+                    href={item.node.frontmatter.website}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn btn-primary"
@@ -263,7 +221,7 @@ export default () => {
                   <a
                     target="_blank"
                     rel="noopener noreferrer"
-                    href={item.node.childMarkdownRemark.frontmatter.source}
+                    href={item.node.frontmatter.source}
                     className="btn btn-outline"
                   >
                     {" "}

@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
-import { Link as ScrollLink, animateScroll as scroll } from "react-scroll"
+import { Link as ScrollLink } from "react-scroll"
 import styled from "styled-components"
 import avatar from "../../images/avatar.png"
 
@@ -112,7 +112,6 @@ export default () => {
             smooth={true}
             offset={-80}
             duration={500}
-            className="logo-title"
             to="project"
             href="#project"
             className="btn"

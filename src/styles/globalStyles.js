@@ -76,5 +76,9 @@ export default createGlobalStyle`
       list-style-type: none;
     }
 
+    input, textarea, button {
+      font-family: inherit;
+    }
+
 
 `
