@@ -19,6 +19,9 @@ const Hero = styled.section`
 
   .avatar-wrapper {
     padding: 3rem 5rem;
+    display: flex;
+    align-items: start;
+    justify-content: center;
     text-align: center;
     @media ${props => props.theme.mediaQueries.large} {
       order: 2;
@@ -27,7 +30,7 @@ const Hero = styled.section`
 
   .avatar {
     width: 16rem;
-    height: 16rem;
+    height: 17rem;
   }
 
   .intro-info {
