@@ -106,10 +106,10 @@ export default () => {
         .required("Name is Required"),
       message: Yup.string()
         .max(20, "Must be 20 characters or less")
-        .required("Email is Required"),
+        .required("Message is Required"),
       email: Yup.string()
         .email("Invalid email address")
-        .required("Message is Required"),
+        .required("Email is Required"),
     }),
     onSubmit: async (values, { resetForm }) => {
       try {

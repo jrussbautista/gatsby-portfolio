@@ -65,9 +65,10 @@ const StacksWrapper = styled.div`
 
   ul {
     display: flex;
+    flex-wrap: wrap;
     li {
       font-size: 1.3rem;
-      padding: 0.3rem 0.5rem;
+      padding: 0.5rem 0.5rem;
       margin-top: 0.3rem;
       color: ${props => props.theme.colors.primary};
 
