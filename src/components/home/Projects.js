@@ -1,10 +1,10 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
-import styled from "styled-components"
-import Heading from "../common/Heading"
-import Github from "../icons/github"
-import LinkIcon from "../icons/link"
+import React from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
+import Img from 'gatsby-image'
+import styled from 'styled-components'
+import Heading from '../common/Heading'
+import Github from '../icons/github'
+import LinkIcon from '../icons/link'
 
 const Row = styled.div`
   padding: 1.5rem;
@@ -32,10 +32,7 @@ const Card = styled.div`
 `
 
 const ImageWrapper = styled.div`
-  border-radius: 15px;
-  border: 1px solid #eee;
   overflow: hidden;
-  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.08);
 `
 
 const Info = styled.div`
@@ -170,7 +167,7 @@ export default () => {
   `)
 
   return (
-    <div id="project" style={{ margin: "3rem 0" }}>
+    <div id="project" style={{ margin: '3rem 0' }}>
       <Heading title="Projects I Built" />
 
       <Row>
@@ -204,7 +201,7 @@ export default () => {
                 ></div>
                 <StacksWrapper>
                   <ul>
-                    {item.node.frontmatter.stack.split(",").map((stack, i) => (
+                    {item.node.frontmatter.stack.split(',').map((stack, i) => (
                       <li key={i}> {stack} </li>
                     ))}
                   </ul>
@@ -216,8 +213,7 @@ export default () => {
                     rel="noopener noreferrer"
                     className="btn btn-primary"
                   >
-                    {" "}
-                    Visit <LinkIcon />{" "}
+                    Visit <LinkIcon />
                   </a>
                   <a
                     target="_blank"
@@ -225,7 +221,6 @@ export default () => {
                     href={item.node.frontmatter.source}
                     className="btn btn-outline"
                   >
-                    {" "}
                     Source <Github />
                   </a>
                 </Buttons>
