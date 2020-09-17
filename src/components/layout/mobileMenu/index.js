@@ -1,36 +1,8 @@
-import React from "react"
-import { Link as ScrollLink } from "react-scroll"
-import styled from "styled-components"
-
-const Menu = styled.div`
-  .menu-wrapper {
-    transform: translateX(${({ isOpen }) => (isOpen ? 0 : "100%")});
-    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0s;
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 12;
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--bg);
-  }
-
-  .menu-list {
-    padding: 1rem;
-    text-align: center;
-
-    a {
-      font-size: 2.2rem;
-      @media ${props => props.theme.mediaQueries.large} {
-        font-size: 1.6rem;
-      }
-    }
-  }
-`
+import React from 'react'
+import { Link as ScrollLink } from 'react-scroll'
+import { Menu } from './styled'
+import Button from '../../shared/Button'
+import resume from '../../../../content/resume.pdf'
 
 const MobileMenu = ({ isOpenSideNav, setIsOpenSideNav }) => {
   return (
@@ -95,6 +67,9 @@ const MobileMenu = ({ isOpenSideNav, setIsOpenSideNav }) => {
           >
             Contact
           </ScrollLink>
+        </div>
+        <div className="menu-list">
+          <Button title="Resume" as="a" href={resume} target="_blank" />
         </div>
       </div>
     </Menu>

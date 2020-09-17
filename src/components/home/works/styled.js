@@ -1,16 +1,22 @@
-import React from "react"
-import { works } from "../../../content/data.json"
-import Heading from "../common/Heading.js"
-import styled from "styled-components"
+import styled from 'styled-components'
 
-const Container = styled.div`
+export const Container = styled.div`
   margin-top: 2rem;
   margin-bottom: 6rem;
 `
 
-const WorkWrapper = styled.div`
+export const WorkWrapper = styled.div`
   margin-top: 2rem;
   padding: 0 1.5rem;
+
+  .dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: var(--color-primary);
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 0.7rem;
+  }
 
   .stepper {
     padding: 2rem 0;
@@ -55,7 +61,7 @@ const WorkWrapper = styled.div`
       }
 
       &::before {
-        content: "";
+        content: '';
         position: absolute;
         width: 5px;
         height: 100%;
@@ -67,7 +73,7 @@ const WorkWrapper = styled.div`
       }
 
       &::after {
-        content: "";
+        content: '';
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
@@ -111,6 +117,7 @@ const WorkWrapper = styled.div`
     &__sub {
       padding-top: 1rem;
       font-size: 1.5rem;
+      line-height: 1.5;
     }
 
     &__timeline-heading {
@@ -139,37 +146,3 @@ const WorkWrapper = styled.div`
     }
   }
 `
-
-const Works = () => {
-  return (
-    <Container id="work">
-      <Heading title="Where I've Worked" />
-      <WorkWrapper>
-        {works.map((work, i) => (
-          <div className="stepper__list" key={i}>
-            <div className="stepper__item">
-              <div className="stepper__step">
-                <div className="stepper__timeline">
-                  <div className="stepper__circle"> </div>
-                  <div className="stepper__timeline-heading">
-                    {work.company}
-                  </div>
-                  <div className="stepper__date">{work.date}</div>
-                </div>
-              </div>
-              <div className="stepper__info">
-                <div className="stepper__body">
-                  <div className="stepper__title"> {work.title}</div>
-
-                  <div className="stepper__sub"> {work.description} </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        ))}
-      </WorkWrapper>
-    </Container>
-  )
-}
-
-export default Works

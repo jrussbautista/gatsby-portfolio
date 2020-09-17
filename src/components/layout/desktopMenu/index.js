@@ -1,25 +1,13 @@
-import React from "react"
-import styled from "styled-components"
-import { Link as ScrollLink } from "react-scroll"
+import React from 'react'
+import { Link as ScrollLink } from 'react-scroll'
+import Button from '../../shared/Button'
+import { StyledDesktopMenu, MenuList } from './styled'
+import resume from '../../../../content/resume.pdf'
 
 const DesktopMenu = () => {
-  const StyledDesktopMenu = styled.div`
-    display: none;
-    align-items: center;
-    @media ${props => props.theme.mediaQueries.medium} {
-      display: flex;
-    }
-    .menu-list {
-      padding: 0 1rem;
-      a {
-        font-size: 1.6rem;
-      }
-    }
-  `
-
   return (
-    <StyledDesktopMenu className="desktop-menu">
-      <div className="menu-list">
+    <StyledDesktopMenu>
+      <MenuList>
         <ScrollLink
           smooth={true}
           offset={-80}
@@ -29,8 +17,8 @@ const DesktopMenu = () => {
         >
           Projects
         </ScrollLink>
-      </div>
-      <div className="menu-list">
+      </MenuList>
+      <MenuList>
         <ScrollLink
           smooth={true}
           offset={-80}
@@ -40,8 +28,8 @@ const DesktopMenu = () => {
         >
           Skills
         </ScrollLink>
-      </div>
-      <div className="menu-list">
+      </MenuList>
+      <MenuList>
         <ScrollLink
           smooth={true}
           offset={-80}
@@ -51,8 +39,8 @@ const DesktopMenu = () => {
         >
           Work
         </ScrollLink>
-      </div>
-      <div className="menu-list">
+      </MenuList>
+      <MenuList>
         <ScrollLink
           smooth={true}
           offset={-80}
@@ -62,8 +50,8 @@ const DesktopMenu = () => {
         >
           About
         </ScrollLink>
-      </div>
-      <div className="menu-list">
+      </MenuList>
+      <MenuList>
         <ScrollLink
           smooth={true}
           offset={50}
@@ -73,7 +61,10 @@ const DesktopMenu = () => {
         >
           Contact
         </ScrollLink>
-      </div>
+      </MenuList>
+      <MenuList>
+        <Button title="Resume" as={'a'} href={resume} target="_blank" />
+      </MenuList>
     </StyledDesktopMenu>
   )
 }

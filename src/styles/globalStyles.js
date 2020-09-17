@@ -1,7 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 
 export default createGlobalStyle`
-
     html {
       box-sizing: border-box;
       line-height: 1.15;
@@ -79,6 +78,4 @@ export default createGlobalStyle`
     input, textarea, button {
       font-family: inherit;
     }
-
-
 `

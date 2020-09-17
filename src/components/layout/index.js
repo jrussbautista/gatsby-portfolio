@@ -1,11 +1,11 @@
-import React from "react"
-import PropTypes from "prop-types"
-import styled from "styled-components"
-import { ThemeProvider } from "styled-components"
-import GlobalStyles from "../../styles/globalStyles"
-import Header from "./Header"
-import theme from "../../utils/theme"
-import Footer from "./Footer"
+import React from 'react'
+import PropTypes from 'prop-types'
+import { ThemeProvider } from 'styled-components'
+import GlobalStyles from '../../styles/globalStyles'
+import Header from './header'
+import theme from '../../utils/theme'
+import Footer from './footer'
+import styled from 'styled-components'
 
 const Container = styled.main`
   max-width: 1200px;
