@@ -7,6 +7,7 @@ import Projects from '../components/home/projects'
 import ContactForm from '../components/home/contactForm'
 import About from '../components/home/about'
 import Works from '../components/home/works'
+import BackToTop from '../components/shared/backToTop'
 
 const IndexPage = () => {
   return (
@@ -27,6 +28,7 @@ const IndexPage = () => {
       <Works />
       <About />
       <ContactForm />
+      <BackToTop />
     </Layout>
   )
 }

@@ -70,25 +70,6 @@ export const StacksWrapper = styled.div`
   }
 `
 
-export const Tabs = styled.div`
-  display: flex;
-  padding: 1rem;
-
-  .tab-list {
-    flex: 1;
-    text-align: center;
-    padding: 1rem 0;
-    cursor: pointer;
-    font-size: 1.8rem;
-  }
-
-  .active {
-    font-weight: 600;
-    color: ${props => props.theme.colors.primary};
-    border-bottom: 2px solid ${props => props.theme.colors.primary};
-  }
-`
-
 export const Buttons = styled.div`
   padding-top: 2rem;
   display: flex;

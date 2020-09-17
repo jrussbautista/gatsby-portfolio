@@ -44,7 +44,7 @@ export const Header = styled.header`
   }
 
   .mobile-icon-menu {
-    @media ${props => props.theme.mediaQueries.medium} {
+    @media ${props => props.theme.mediaQueries.large} {
       display: none;
     }
   }

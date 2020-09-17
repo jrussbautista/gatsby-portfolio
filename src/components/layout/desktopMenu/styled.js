@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const StyledDesktopMenu = styled.div`
 display: none;
 align-items: center;
-@media ${props => props.theme.mediaQueries.medium} {
+@media ${props => props.theme.mediaQueries.large} {
   display: flex;
 }
 }`

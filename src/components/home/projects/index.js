@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import Heading from '../../shared/Heading'
@@ -15,8 +15,13 @@ import {
   Card,
   Col,
 } from './styled'
+import Tabs from '../../shared/Tabs'
+
+const tabs = ['Web', 'Mobile']
 
 export default () => {
+  const [active, setActive] = useState('Web')
+
   const { allMarkdownRemark: items } = useStaticQuery(graphql`
     query {
       allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
@@ -25,6 +30,7 @@ export default () => {
             id
             html
             frontmatter {
+              type
               title
               website
               stack
@@ -43,11 +49,16 @@ export default () => {
     }
   `)
 
+  const allItems = items.edges.filter(
+    item => item.node.frontmatter.type === active.toLowerCase()
+  )
+
   return (
     <div id="project" style={{ margin: '3rem 0' }}>
       <Heading title="Projects I Built" />
+      <Tabs active={active} tabs={tabs} onChange={setActive} />
       <Row>
-        {items.edges.map(item => (
+        {allItems.map(item => (
           <Col key={item.node.id}>
             <Card>
               <a
@@ -83,14 +94,17 @@ export default () => {
                   </ul>
                 </StacksWrapper>
                 <Buttons>
-                  <Button
-                    title="Visit"
-                    as="a"
-                    target="_blank"
-                    href={item.node.frontmatter.website}
-                    rel="noopener noreferrer"
-                    icon={<LinkIcon color="#fff" />}
-                  />
+                  {item.node.frontmatter.website && (
+                    <Button
+                      title="Visit"
+                      as="a"
+                      target="_blank"
+                      href={item.node.frontmatter.website}
+                      rel="noopener noreferrer"
+                      icon={<LinkIcon color="#fff" />}
+                    />
+                  )}
+
                   <Button
                     href={item.node.frontmatter.source}
                     title="Source"

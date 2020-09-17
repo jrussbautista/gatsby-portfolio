@@ -5,6 +5,7 @@ website: 'https://easy-recipe.netlify.app/'
 source: 'https://github.com/jrussumbrella/easy-recipe'
 stack: 'React js, SCSS, Node js, MongoDB, GraphQL, Cloudinary'
 image: 'easy-recipe-thumbnail.png'
+type: 'web'
 ---
 
-A cookbook like app for anyone who wants to create and share their recipe in the world.
+A cookbook like website for anyone who wants to create and share their recipe in the world.

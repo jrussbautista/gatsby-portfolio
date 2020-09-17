@@ -21,7 +21,7 @@ export default () => {
   )
 
   return (
-    <Hero>
+    <Hero id="hero">
       <div className="intro-info">
         <div className="avatar-wrapper">
           <img src={avatar} className="avatar" alt="avatar" />
