@@ -36,7 +36,7 @@ const BackToTop = () => {
               focusable="false"
               data-prefix="fas"
               data-icon="chevron-up"
-              class="svg-inline--fa fa-chevron-up fa-w-14 scrollToTop__StyledIcon-sc-17tebii-1 huNGxi"
+              className="svg-inline--fa fa-chevron-up fa-w-14 scrollToTop__StyledIcon-sc-17tebii-1 huNGxi"
               role="img"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 448 512"

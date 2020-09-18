@@ -13,4 +13,12 @@ export const MenuList = styled.div`
   a {
     font-size: 1.5rem;
   }
+
+  a:hover {
+    color: var(--color-primary);
+  }
+
+  .active {
+    color: var(--color-primary);
+  }
 `

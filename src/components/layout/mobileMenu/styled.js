@@ -27,5 +27,9 @@ export const Menu = styled.div`
         font-size: 1.6rem;
       }
     }
+
+    .active {
+      color: var(--color-primary);
+    }
   }
 `

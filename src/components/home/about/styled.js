@@ -7,7 +7,7 @@ export const Container = styled.div`
 `
 
 export const Desc = styled.div`
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   padding: 1rem 0;
   line-height: 1.8;
 `

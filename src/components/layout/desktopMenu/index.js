@@ -9,6 +9,8 @@ const DesktopMenu = () => {
     <StyledDesktopMenu>
       <MenuList>
         <ScrollLink
+          spy={true}
+          activeClass="active"
           smooth={true}
           offset={-80}
           duration={500}
@@ -20,6 +22,8 @@ const DesktopMenu = () => {
       </MenuList>
       <MenuList>
         <ScrollLink
+          spy={true}
+          activeClass="active"
           smooth={true}
           offset={-80}
           duration={500}
@@ -31,6 +35,8 @@ const DesktopMenu = () => {
       </MenuList>
       <MenuList>
         <ScrollLink
+          spy={true}
+          activeClass="active"
           smooth={true}
           offset={-80}
           duration={500}
@@ -42,6 +48,8 @@ const DesktopMenu = () => {
       </MenuList>
       <MenuList>
         <ScrollLink
+          spy={true}
+          activeClass="active"
           smooth={true}
           offset={-80}
           duration={500}
@@ -53,6 +61,8 @@ const DesktopMenu = () => {
       </MenuList>
       <MenuList>
         <ScrollLink
+          activeClass="active"
+          spy={true}
           smooth={true}
           offset={50}
           duration={500}
@@ -63,7 +73,7 @@ const DesktopMenu = () => {
         </ScrollLink>
       </MenuList>
       <MenuList>
-        <Button title="Resume" as={'a'} href={resume} target="_blank" />
+        <Button title="Resume" as="a" href={resume} target="_blank" />
       </MenuList>
     </StyledDesktopMenu>
   )
