@@ -14,6 +14,14 @@ export const BackToTop = styled.button`
   height: 5rem;
   border-radius: 50%;
   cursor: pointer;
+
+  &:hover {
+    background-color: var(--color-primary);
+
+    svg {
+      color: #fff;
+    }
+  }
 `
 
 export const IconWrapper = styled.span`

@@ -17,7 +17,8 @@ export default createGlobalStyle`
 
     :root {
       --color-primary: ${props => props.theme.colors.primary};
-      --color-dark: ${({ theme }) => theme.colors.dark}
+      --color-dark: ${({ theme }) => theme.colors.dark};
+      --color-gray: ${({ theme }) => theme.colors.gray}; 
     }
 
     * {

@@ -15,20 +15,24 @@ export const Hero = styled.section`
   }
 
   .avatar-wrapper {
-    padding: 3rem 5rem;
+    margin: 3rem auto;
     display: flex;
     align-items: start;
     justify-content: center;
     text-align: center;
+    background-color: var(--color-gray);
+    width: 20rem;
+    height: 20rem;
+    overflow: hidden;
+    border-radius: 15px;
     @media ${props => props.theme.mediaQueries.large} {
       order: 2;
     }
   }
 
   .avatar {
-    width: 20rem;
-    height: 20rem;
-    border-radius: 15px;
+    width: 100%;
+    height: 100%;
   }
 
   .intro-info {

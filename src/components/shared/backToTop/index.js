@@ -15,6 +15,7 @@ const BackToTop = () => {
 
   useEffect(() => {
     window.addEventListener('scroll', checkScrollTop)
+    return () => window.removeEventListener('scroll', checkScrollTop)
   }, [])
 
   if (!showScroll) return null
