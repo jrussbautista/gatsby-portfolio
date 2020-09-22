@@ -1,5 +1,5 @@
 import React from 'react'
-import Heading from '../../shared/Heading'
+import Heading from '../../shared/heading'
 import FrontendIcon from '../../icons/frontend'
 import Backend from '../../icons/backend'
 import Database from '../../icons/database'

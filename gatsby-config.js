@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `James Russel C. Bautista | Portfolio`,
+    email: `jrussclay@gmail.com`,
     description: `Hi Im James Russel C. Bautista. Im a Ful stack developer. I build stuff.`,
     author: `James Russel C. Bautista`,
     job: `Full Stack Software Engineer`,
@@ -11,7 +12,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-145462597-2",
+        trackingId: 'UA-145462597-2',
       },
     },
     `gatsby-plugin-react-helmet`,
@@ -23,9 +24,9 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: "content",
+        name: 'content',
         path: `${__dirname}/content/`,
       },
     },

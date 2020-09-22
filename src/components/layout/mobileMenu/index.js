@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link as ScrollLink } from 'react-scroll'
 import { Menu } from './styled'
-import Button from '../../shared/Button'
+import Button from '../../shared/button'
 import resume from '../../../../content/resume.pdf'
 
 const MobileMenu = ({ isOpenSideNav, setIsOpenSideNav }) => {
@@ -66,8 +66,6 @@ const MobileMenu = ({ isOpenSideNav, setIsOpenSideNav }) => {
         </div>
         <div className="menu-list">
           <ScrollLink
-            activeClass="active"
-            smooth={true}
             offset={50}
             duration={500}
             to="contact"

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link as ScrollLink } from 'react-scroll'
-import Button from '../../shared/Button'
+import Button from '../../shared/button'
 import { StyledDesktopMenu, MenuList } from './styled'
 import resume from '../../../../content/resume.pdf'
 

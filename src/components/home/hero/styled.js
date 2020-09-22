@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import Button from '../../shared/Button'
+import Button from '../../shared/button'
 
 export const Hero = styled.section`
   min-height: 100vh;

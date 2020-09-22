@@ -5,8 +5,8 @@ export const Container = styled.div`
 
   .page-text {
     font-size: 1.6rem;
-    margin-top: 1rem 0;
     text-align: center;
+    margin-bottom: 1rem;
   }
 `
 

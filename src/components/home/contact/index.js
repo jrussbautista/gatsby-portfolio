@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import { useFormik } from 'formik'
+import { graphql, useStaticQuery } from 'gatsby'
 import * as Yup from 'yup'
-import Heading from '../../shared/Heading'
-import Button from '../../shared/Button'
+import Heading from '../../shared/heading'
+import Button from '../../shared/button'
 import { Container, Form, SuccessMsg, Error } from './styled'
 
 export default () => {
@@ -52,10 +53,25 @@ export default () => {
     },
   })
 
+  const data = useStaticQuery(
+    graphql`
+      query {
+        site {
+          siteMetadata {
+            email
+          }
+        }
+      }
+    `
+  )
+
   return (
     <Container id="contact">
-      <div className="page-text">Have a projects in mind?</div>
       <Heading title="Send me a message" />
+      <div className="page-text">Have a projects in mind?</div>
+      <div className="page-text">
+        Email me at <span className="link">{data.site.siteMetadata.email}</span>
+      </div>
 
       <Form onSubmit={formik.handleSubmit}>
         {success && (

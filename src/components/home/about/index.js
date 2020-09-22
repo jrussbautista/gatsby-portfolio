@@ -1,5 +1,5 @@
 import React from 'react'
-import Heading from '../../shared/Heading'
+import Heading from '../../shared/heading'
 import { about } from '../../../../content/data.json'
 import { StyledAbout, Container, Desc } from './styled'
 

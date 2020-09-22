@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
-import Heading from '../../shared/Heading'
+import Heading from '../../shared/heading'
 import Github from '../../icons/github'
 import LinkIcon from '../../icons/link'
-import Button from '../../shared/Button'
+import Button from '../../shared/button'
 import {
   Row,
   ImageWrapper,
@@ -15,7 +15,7 @@ import {
   Card,
   Col,
 } from './styled'
-import Tabs from '../../shared/Tabs'
+import Tabs from '../../shared/tabs'
 
 const tabs = ['Web', 'Mobile']
 

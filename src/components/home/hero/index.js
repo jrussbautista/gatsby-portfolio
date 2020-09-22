@@ -2,6 +2,7 @@ import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 import { Link as ScrollLink } from 'react-scroll'
 import avatar from '../../../images/me.jpg'
+import SocialLinks from '../../shared/socialLinks'
 import { Hero, SeeMyProjects } from './styled'
 
 export default () => {
@@ -31,6 +32,7 @@ export default () => {
           <h1>{data.site.siteMetadata.author}.</h1>
           <div className="intro-desc">{data.site.siteMetadata.intro}</div>
           <div className="sub">{data.site.siteMetadata.sub}</div>
+          <SocialLinks />
           <ScrollLink
             smooth={true}
             offset={-80}
