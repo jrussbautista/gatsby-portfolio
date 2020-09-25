@@ -3,6 +3,7 @@ import { Link as ScrollLink } from 'react-scroll'
 import HamburgerIcon from '../../icons/hamburger'
 import DesktopMenu from '../desktopMenu'
 import MobileMenu from '../mobileMenu'
+import logo from '../../../images/site-logo.png'
 import { Header, Overlay } from './styled'
 
 export default () => {
@@ -30,11 +31,10 @@ export default () => {
             smooth={true}
             offset={0}
             duration={500}
-            className="logo-title"
             to="home"
             href="#home"
           >
-            j.russ
+            <img src={logo} className="site-logo" alt="site-logo" />
           </ScrollLink>
         </div>
         <div className="spacer"></div>

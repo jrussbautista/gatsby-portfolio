@@ -25,6 +25,10 @@ export const Header = styled.header`
     font-size: 2.5rem;
   }
 
+  .site-logo {
+    max-width: 5rem;
+  }
+
   .spacer {
     flex: 1;
   }
