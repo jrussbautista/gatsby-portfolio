@@ -26,7 +26,7 @@ export const Header = styled.header`
   }
 
   .site-logo {
-    max-width: 5rem;
+    max-width: 4.5rem;
   }
 
   .spacer {
