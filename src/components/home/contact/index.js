@@ -137,8 +137,8 @@ export default () => {
             <Button
               title="Send"
               type="submit"
-              disabled={true}
-              loading={true}
+              disabled={submit}
+              loading={submit}
               style={{ width: '10rem', height: '4.2rem' }}
             />
           </div>
