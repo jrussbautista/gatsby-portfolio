@@ -8,4 +8,4 @@ image: 'property-thumbnail.png'
 type: 'web'
 ---
 
-A real state website. This is my first graphQL project. It features user authentication (login with email and password, login via google), view, search, and inquire for properties.
+A real state website. It features user authentication (login with email and password, login via google), view, search, share, create and inquire for properties.

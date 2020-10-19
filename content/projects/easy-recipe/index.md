@@ -8,4 +8,4 @@ image: 'easy-recipe-thumbnail.png'
 type: 'web'
 ---
 
-A cookbook like website for anyone who wants to create and share their recipe in the world.
+A cookbook website for anyone who wants to create and share their recipe in the world. It features user authentication, view, create and share recipes.
