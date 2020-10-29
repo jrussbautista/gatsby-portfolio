@@ -18,7 +18,7 @@
     }
   ],
   "about": {
-    "description": "Hello. Im James, a full stack web and mobile developer based in Manila, Philippines. I love to build things from the scratch. I started my career as a junior front end developer as an on the job trainee. After graduating, I continue my career as a front end developer for 2 years. After 2 years of being a front end developer I levelled up my career and decided to learn backend. As of now, I worked as a full stack web developer. Aside from coding, I love to play basketball and go outside with my family or friends."
+    "description": "Hello. Im James, a software developer based in Manila, Philippines. I love to build things from the scratch. I started my career as a junior front end developer as an on the job trainee. After graduating, I continue my career as a front end developer for 2 years. After 2 years of being a front end developer I levelled up my career and decided to learn backend. As of now, I worked as a web developer. Aside from coding, I love to play basketball and go outside with my family or friends."
   },
   "works": [
     {
@@ -90,9 +90,6 @@
         },
         {
           "name": "Express JS"
-        },
-        {
-          "name": "GraphQL"
         },
         {
           "name": "Laravel"

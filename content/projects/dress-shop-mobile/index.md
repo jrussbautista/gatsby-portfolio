@@ -7,4 +7,4 @@ image: 'dress-shop-mobile.png'
 type: 'mobile'
 ---
 
-The mobile version of Dress Shop. An e-commerce for clothing store. User can view and search products, add to cart, purchase (test mode only) that uses Stripe and Paypal for payment.
+The mobile version of Dress Shop. An e-commerce for clothing store. User can view and search products, add to cart, purchase that uses Stripe and Paypal for payment.

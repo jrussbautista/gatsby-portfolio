@@ -25,8 +25,16 @@ export const Hero = styled.section`
     height: 20rem;
     overflow: hidden;
     border-radius: 15px;
+
     @media ${props => props.theme.mediaQueries.large} {
       order: 2;
+    }
+  }
+
+  .intro-main {
+    flex: 1;
+    @media ${props => props.theme.mediaQueries.large} {
+      margin-right: 2rem;
     }
   }
 
@@ -61,7 +69,7 @@ export const Hero = styled.section`
 
   .sub {
     margin-top: 2rem;
-    line-height: 2rem;
+    line-height: 2.5rem;
     font-size: 1.5rem;
   }
 `
