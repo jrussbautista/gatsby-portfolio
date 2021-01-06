@@ -15,7 +15,7 @@ const IndexPage = () => {
       <SEO
         title="James Russel C. Bautista"
         keywords={[
-          `full-stack developer`,
+          `full stack developer`,
           `gatsby portfolio`,
           `react`,
           `front-end`,

@@ -6,7 +6,7 @@ module.exports = {
     author: `James Russel C. Bautista`,
     job: `Full Stack Software Engineer`,
     intro: `I build stuff.`,
-    sub: `I'm a software developer based in Manila, Philippines specializing in building websites and mobile applications.`,
+    sub: `I'm a full stack developer based in Manila, Philippines specializing in building websites and mobile applications.`,
   },
   plugins: [
     {
