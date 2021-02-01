@@ -50,17 +50,16 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/site-logo.png`, // This path is relative to the root of the site.
       },
-    },
+    }, 
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          {
-            family: `Montserrat`,
-            variants: [`400`, `600`, `700`],
-          },
+          `limelight`,
+          `Montserrat\:300,400,400i,700` // you can also specify font weights and styles
         ],
-      },
+        display: 'swap'
+      }
     },
     `gatsby-transformer-remark`,
     `gatsby-plugin-styled-components`,
