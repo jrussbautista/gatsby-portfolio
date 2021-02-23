@@ -3,8 +3,8 @@ title: 'Dress Shop'
 date: '2020-05-10'
 website: 'https://dress-shop.vercel.app/'
 source: 'https://github.com/jrussumbrella/dress-shop'
-stack: 'Next js, React js, Typescript, MongoDB, Stripe, Paypal, Cloudinary'
-image: 'dress-thumbnail.png'
+stack: 'Next js, React js, Node js, Express, Typescript, MongoDB, Stripe, Paypal, Cloudinary'
+image: 'dress-shop.png'
 type: 'web'
 ---
 
