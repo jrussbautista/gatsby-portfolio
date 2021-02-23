@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState, useRef } from 'react'
 import { Link as ScrollLink } from 'react-scroll'
 import HamburgerIcon from '../../icons/hamburger'
 import DesktopMenu from '../desktop-menu'
@@ -10,18 +10,15 @@ export default () => {
   const [isOpenSideNav, setIsOpenSideNav] = useState(false)
   const sidebarRef = useRef()
 
-  useEffect(() => {
-    document.addEventListener('click', handleClickOutSide)
-    return () => document.removeEventListener('click', handleClickOutSide)
-  }, [])
-
-  const handleClickOutSide = e => {
-    if (sidebarRef.current && sidebarRef.current.contains(e.target)) {
-      setIsOpenSideNav(false)
-    }
+  const handleCloseSideNav = () => {
+    document.body.classList.remove('lock')
+    setIsOpenSideNav(false)
   }
 
-  const overlayElement = isOpenSideNav && <Overlay ref={sidebarRef} />
+  const handleOpenSideNav = () => {
+    document.body.classList.add('lock')
+    setIsOpenSideNav(true)
+  }
 
   return (
     <Header>
@@ -39,19 +36,18 @@ export default () => {
         </div>
         <div className="spacer"></div>
         <button
-          onClick={() => setIsOpenSideNav(true)}
+          onClick={handleOpenSideNav}
           className={`btn-icon mobile-icon-menu`}
         >
           <HamburgerIcon />
         </button>
         <DesktopMenu />
-        <MobileMenu
-          isOpenSideNav={isOpenSideNav}
-          setIsOpenSideNav={setIsOpenSideNav}
-        />
+        <MobileMenu isOpen={isOpenSideNav} onClose={handleCloseSideNav} />
       </div>
 
-      {overlayElement}
+      {isOpenSideNav && (
+        <Overlay onClick={handleCloseSideNav} ref={sidebarRef} />
+      )}
     </Header>
   )
 }

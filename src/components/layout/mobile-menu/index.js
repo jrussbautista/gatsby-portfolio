@@ -5,15 +5,11 @@ import Button from '../../ui/button'
 import CloseIcon from '../../icons/close'
 import resume from '../../../../content/resume.pdf'
 
-const MobileMenu = ({ isOpenSideNav, setIsOpenSideNav }) => {
-  const handleClose = () => {
-    setIsOpenSideNav(false)
-  }
-
+const MobileMenu = ({ isOpen, onClose }) => {
   return (
-    <Menu isOpen={isOpenSideNav}>
+    <Menu isOpen={isOpen}>
       <div className="close-button-container">
-        <button className="close-button" onClick={handleClose}>
+        <button className="close-button" onClick={onClose}>
           <CloseIcon />
         </button>
       </div>
@@ -28,7 +24,7 @@ const MobileMenu = ({ isOpenSideNav, setIsOpenSideNav }) => {
             href="#project"
             activeClass="active"
             spy={true}
-            onClick={handleClose}
+            onClick={onClose}
           >
             Projects
           </ScrollLink>
@@ -42,7 +38,7 @@ const MobileMenu = ({ isOpenSideNav, setIsOpenSideNav }) => {
             spy={true}
             to="skill"
             href="#skill"
-            onClick={handleClose}
+            onClick={onClose}
           >
             Skills
           </ScrollLink>
@@ -56,7 +52,7 @@ const MobileMenu = ({ isOpenSideNav, setIsOpenSideNav }) => {
             duration={500}
             to="work"
             href="#work"
-            onClick={handleClose}
+            onClick={onClose}
           >
             Work
           </ScrollLink>
@@ -70,7 +66,7 @@ const MobileMenu = ({ isOpenSideNav, setIsOpenSideNav }) => {
             activeClass="active"
             spy={true}
             href="#about"
-            onClick={handleClose}
+            onClick={onClose}
           >
             About
           </ScrollLink>
@@ -83,7 +79,7 @@ const MobileMenu = ({ isOpenSideNav, setIsOpenSideNav }) => {
             href="#contact"
             activeClass="active"
             spy={true}
-            onClick={handleClose}
+            onClick={onClose}
           >
             Contact
           </ScrollLink>

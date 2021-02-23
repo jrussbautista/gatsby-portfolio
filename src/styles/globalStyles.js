@@ -15,6 +15,10 @@ export default createGlobalStyle`
       }
     }
 
+    .lock {
+      overflow: hidden;
+    }
+
     :root {
       --color-primary: ${props => props.theme.colors.primary};
       --color-dark: ${({ theme }) => theme.colors.dark};

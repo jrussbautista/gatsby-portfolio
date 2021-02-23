@@ -4,7 +4,7 @@ export const Wrapper = styled.div`
   position: fixed;
   bottom: 40px;
   right: 40px;
-  z-index: 99;
+  z-index: 9;
 `
 
 export const BackToTop = styled.button`
