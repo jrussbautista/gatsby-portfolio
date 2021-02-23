@@ -2,11 +2,22 @@ import React from 'react'
 import { Link as ScrollLink } from 'react-scroll'
 import { Menu } from './styled'
 import Button from '../../ui/button'
+import CloseIcon from '../../icons/close'
 import resume from '../../../../content/resume.pdf'
 
 const MobileMenu = ({ isOpenSideNav, setIsOpenSideNav }) => {
+  const handleClose = () => {
+    setIsOpenSideNav(false)
+  }
+
   return (
     <Menu isOpen={isOpenSideNav}>
+      <div className="close-button-container">
+        <button className="close-button" onClick={handleClose}>
+          <CloseIcon />
+        </button>
+      </div>
+
       <div className="menu-wrapper">
         <div className="menu-list">
           <ScrollLink
@@ -17,7 +28,7 @@ const MobileMenu = ({ isOpenSideNav, setIsOpenSideNav }) => {
             href="#project"
             activeClass="active"
             spy={true}
-            onClick={() => setIsOpenSideNav(false)}
+            onClick={handleClose}
           >
             Projects
           </ScrollLink>
@@ -31,7 +42,7 @@ const MobileMenu = ({ isOpenSideNav, setIsOpenSideNav }) => {
             spy={true}
             to="skill"
             href="#skill"
-            onClick={() => setIsOpenSideNav(false)}
+            onClick={handleClose}
           >
             Skills
           </ScrollLink>
@@ -45,7 +56,7 @@ const MobileMenu = ({ isOpenSideNav, setIsOpenSideNav }) => {
             duration={500}
             to="work"
             href="#work"
-            onClick={() => setIsOpenSideNav(false)}
+            onClick={handleClose}
           >
             Work
           </ScrollLink>
@@ -59,7 +70,7 @@ const MobileMenu = ({ isOpenSideNav, setIsOpenSideNav }) => {
             activeClass="active"
             spy={true}
             href="#about"
-            onClick={() => setIsOpenSideNav(false)}
+            onClick={handleClose}
           >
             About
           </ScrollLink>
@@ -72,7 +83,7 @@ const MobileMenu = ({ isOpenSideNav, setIsOpenSideNav }) => {
             href="#contact"
             activeClass="active"
             spy={true}
-            onClick={() => setIsOpenSideNav(false)}
+            onClick={handleClose}
           >
             Contact
           </ScrollLink>
