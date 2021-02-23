@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react'
 import { Link as ScrollLink } from 'react-scroll'
 import HamburgerIcon from '../../icons/hamburger'
-import DesktopMenu from '../desktopMenu'
-import MobileMenu from '../mobileMenu'
+import DesktopMenu from '../desktop-menu'
+import MobileMenu from '../mobile-menu'
 import logo from '../../../images/site-logo.png'
 import { Header, Overlay } from './styled'
 

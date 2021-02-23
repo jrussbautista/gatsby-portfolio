@@ -1,13 +1,13 @@
 import React from 'react'
 import Layout from '../components/layout/'
 import SEO from '../components/seo'
-import Skills from '../components/home/skills'
-import Hero from '../components/home/hero'
-import Projects from '../components/home/projects'
-import Contact from '../components/home/contact'
-import About from '../components/home/about'
-import Works from '../components/home/works'
-import BackToTop from '../components/shared/backToTop'
+import Skills from '../components/skills'
+import Hero from '../components/hero'
+import Projects from '../components/projects'
+import Contact from '../components/contact'
+import About from '../components/about'
+import Works from '../components/works'
+import BackToTop from '../components/back-to-top'
 
 const IndexPage = () => {
   return (

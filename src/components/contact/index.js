@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 import { useFormik } from 'formik'
 import { graphql, useStaticQuery } from 'gatsby'
 import * as Yup from 'yup'
-import Heading from '../../shared/heading'
-import Button from '../../shared/button'
+import Heading from '../ui/heading'
+import Button from '../ui/button'
 import { Container, Form, SuccessMsg, Error } from './styled'
 
 export default () => {

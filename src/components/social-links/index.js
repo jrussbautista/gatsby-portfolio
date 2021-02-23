@@ -1,9 +1,9 @@
 import React from 'react'
-import Github from '../../icons/github'
-import CodePen from '../../icons/codepen'
-import LinkedIn from '../../icons/linkedin'
-import Twitter from '../../icons/twitter'
-import data from '../../../../content/data.json'
+import Github from '../icons/github'
+import CodePen from '../icons/codepen'
+import LinkedIn from '../icons/linkedin'
+import Twitter from '../icons/twitter'
+import data from '../../../content/data.json'
 import { StyledLinks } from './styled'
 
 const SocialLinks = () => {

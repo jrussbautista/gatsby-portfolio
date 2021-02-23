@@ -1,8 +1,8 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 import { Link as ScrollLink } from 'react-scroll'
-import avatar from '../../../images/me.jpg'
-import SocialLinks from '../../shared/socialLinks'
+import avatar from '../../images/me.jpg'
+import SocialLinks from '../social-links'
 import { Hero, SeeMyProjects } from './styled'
 
 export default () => {

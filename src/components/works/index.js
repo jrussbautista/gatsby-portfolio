@@ -1,6 +1,6 @@
 import React from 'react'
-import { works } from '../../../../content/data.json'
-import Heading from '../../shared/heading'
+import { works } from '../../../content/data.json'
+import Heading from '../ui/heading'
 import { WorkWrapper, Container } from './styled'
 
 const Works = () => {

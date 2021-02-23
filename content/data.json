@@ -55,14 +55,9 @@
   ],
   "skills": [
     {
-      "type": "front-end",
-      "name": "Front End",
       "list": [
         {
-          "name": "HTML"
-        },
-        {
-          "name": "CSS/ SCSS"
+          "name": "HTML5 + CSS3"
         },
         {
           "name": "Javascript"
@@ -74,43 +69,29 @@
           "name": "React JS"
         },
         {
-          "name": "Redux"
+          "name": "Next JS"
         },
         {
-          "name": "Next JS"
+          "name": "React Native"
         }
       ]
     },
     {
-      "type": "back-end",
-      "name": "Back End",
       "list": [
+        {
+          "name": "Java"
+        },
         {
           "name": "Node JS"
         },
         {
-          "name": "Express JS"
-        },
-        {
           "name": "Laravel"
-        }
-      ]
-    },
-    {
-      "type": "database",
-      "name": "Database",
-      "list": [
-        {
-          "name": "PostgreSQL"
         },
         {
-          "name": "MySQL"
+          "name": "Firebase"
         },
         {
-          "name": "Firebase / Cloud Firestore"
-        },
-        {
-          "name": "MongoDB"
+          "name": "AWS"
         }
       ]
     }

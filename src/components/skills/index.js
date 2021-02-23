@@ -1,9 +1,6 @@
 import React from 'react'
-import Heading from '../../shared/heading'
-import FrontendIcon from '../../icons/frontend'
-import Backend from '../../icons/backend'
-import Database from '../../icons/database'
-import { skills } from '../../../../content/data.json'
+import Heading from '../ui/heading'
+import { skills } from '../../../content/data.json'
 import { Card, Wrapper, Stacks } from './styled'
 
 export default () => {
@@ -14,10 +11,6 @@ export default () => {
         <Wrapper>
           {skills.map((skill, i) => (
             <Card key={i}>
-              {skill.type === 'front-end' && <FrontendIcon />}
-              {skill.type === 'back-end' && <Backend />}
-              {skill.type === 'database' && <Database />}
-              <div className="card-title"> {skill.name} </div>
               <Stacks>
                 {skill.list.map((item, i) => (
                   <li key={i}> {item.name} </li>

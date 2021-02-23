@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link as ScrollLink } from 'react-scroll'
 import { Menu } from './styled'
-import Button from '../../shared/button'
+import Button from '../../ui/button'
 import resume from '../../../../content/resume.pdf'
 
 const MobileMenu = ({ isOpenSideNav, setIsOpenSideNav }) => {
