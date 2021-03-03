@@ -2,12 +2,17 @@ import styled from 'styled-components'
 import Button from '../ui/button'
 
 export const Hero = styled.section`
-  min-height: 100vh;
   position: relative;
   padding: 3rem 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: 5rem;
+
+  @media ${props => props.theme.mediaQueries.large} {
+    min-height: calc(100vh);
+    margin-top: 0;
+  }
 
   h1 {
     font-size: 3rem;
@@ -34,7 +39,7 @@ export const Hero = styled.section`
   .intro-main {
     flex: 1;
     @media ${props => props.theme.mediaQueries.large} {
-      margin-right: 2rem;
+      margin-right: 6rem;
     }
   }
 
