@@ -39,7 +39,7 @@ export const Hero = styled.section`
   .intro-main {
     flex: 1;
     @media ${props => props.theme.mediaQueries.large} {
-      margin-right: 6rem;
+      margin-right: 10rem;
     }
   }
 

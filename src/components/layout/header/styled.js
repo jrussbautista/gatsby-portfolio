@@ -8,7 +8,8 @@ export const Header = styled.header`
   z-index: 20;
   height: 7rem;
   background-color: var(--bg);
-  box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.06);
+  box-shadow: ${props =>
+    props.showShadow ? '0px 2px 2px 0px rgba(0, 0, 0, 0.06)' : 'none'};
 
   .wrapper {
     max-width: 1200px;

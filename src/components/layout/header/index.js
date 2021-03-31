@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { Link as ScrollLink } from 'react-scroll'
 import HamburgerIcon from '../../icons/hamburger'
 import DesktopMenu from '../desktop-menu'
@@ -7,8 +7,22 @@ import logo from '../../../images/site-logo.png'
 import { Header, Overlay } from './styled'
 
 export default () => {
+  const [isScrolling, setIsScrolling] = useState(false)
   const [isOpenSideNav, setIsOpenSideNav] = useState(false)
   const sidebarRef = useRef()
+
+  const checkScrollTop = () => {
+    if (!isScrolling && window.pageYOffset > 100) {
+      setIsScrolling(true)
+    } else {
+      setIsScrolling(false)
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', checkScrollTop)
+    return () => window.removeEventListener('scroll', checkScrollTop)
+  }, [])
 
   const handleCloseSideNav = () => {
     document.body.classList.remove('lock')
@@ -21,7 +35,7 @@ export default () => {
   }
 
   return (
-    <Header>
+    <Header showShadow={isScrolling}>
       <div className="wrapper">
         <div>
           <ScrollLink
