@@ -55,7 +55,7 @@ export default () => {
 
   return (
     <div id="project" style={{ margin: '3rem 0' }}>
-      <Heading title="Projects I Built" />
+      <Heading title="Projects I've Developed" />
       <Tabs active={active} tabs={tabs} onChange={setActive} />
       <Row>
         {allItems.map(item => (
