@@ -15,8 +15,6 @@ export const Col = styled.div`
 `
 
 export const Card = styled.div`
-  border-radius: 15px;
-  overflow: hidden;
   display: grid;
   grid-template-columns: 1fr;
   @media ${props => props.theme.mediaQueries.large} {
@@ -27,6 +25,8 @@ export const Card = styled.div`
 
 export const ImageWrapper = styled.div`
   overflow: hidden;
+
+  box-shadow: 0 2px 5px rgb(0 0 0 / 10%), 0 1px 2px rgb(0 0 0 / 5%);
 `
 
 export const Info = styled.div`
