@@ -23,12 +23,11 @@
   "works": [
     {
       "title": "Web Developer",
-      "date": "August 2019- Present",
+      "date": "August 2019 - Present",
       "description": [
-        "Write modern, performant and manageable code for our internal projects",
-        "Create api’s endpoint for our project",
-        "Communicate and collaborate with the ui/ux and front end developers on a daily basis",
-        "Responsible for code review for junior frontend developers"
+        "Worked with a team of developers to developed  a web application that helped the company to transition to paperless for purchase requests and purchase request approval process.",
+        "Write clean, optimise and manageable code for our internal projects.",
+        "Communicate and collaborate with team of developers, designers and project manager on a daily basis."
       ],
       "company": "Sta. Clara International Corp."
     },
@@ -36,11 +35,10 @@
       "title": "Front-end Developer",
       "date": "June 2017- June 2019",
       "description": [
-        "Translate mockup designs into html, css, javascript code to produce a web page template",
-        "Collaborate with UI/ UX designer with regards to design specifications",
-        "Collaborate and help with back-end developers",
-        "Convert existing javascript project into react project",
-        "Maintain and improve existing websites"
+        "Worked with a team of developers to rebuild the current e-commerce web app for the company’s main product.",
+        "Converted the current e-commerce web app into a more optimise and more performant web app.",
+        "Maintained and improved existing web apps.",
+        "Communicate and collaborate with team of developers, designers and project manager on a daily basis."
       ],
       "company": "E-Creations Inc."
     },
@@ -49,7 +47,7 @@
       "date": "January 2017 - May 2017",
       "company": "Advanced Techinnovations Systems",
       "description": [
-        " Works as junior software engineer and help senior developer in developing the Hanap Trabaho web application."
+        "Worked as a junior software engineer and helped senior developer in developing various web application."
       ]
     }
   ],
@@ -91,10 +89,7 @@
           "name": "MongoDB"
         },
         {
-          "name": "PostgreSQL"
-        },
-        {
-          "name": "AWS"
+          "name": "MySQL"
         }
       ]
     }

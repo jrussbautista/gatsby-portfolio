@@ -8,4 +8,4 @@ image: 'dress-shop.png'
 type: 'web'
 ---
 
-An e-commerce website for clothing store. User can view and search products, add to cart, purchase that uses Stripe and Paypal for payment. It also has an admin page for managing products.
+An e-commerce website for clothing store. User can view and search for products, add to cart, purchase products that uses Stripe and Paypal for payment.
