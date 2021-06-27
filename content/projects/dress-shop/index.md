@@ -1,6 +1,6 @@
 ---
 title: 'Dress Shop'
-date: '2020-05-10'
+order: 1
 website: 'https://dress-shop.vercel.app/'
 source: 'https://github.com/jrussumbrella/dress-shop'
 stack: 'Next js, React js, Node js, Express, Typescript, MongoDB, Stripe, Paypal, Cloudinary'

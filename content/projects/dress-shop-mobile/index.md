@@ -1,6 +1,6 @@
 ---
 title: 'Dress Shop Mobile'
-date: '2020-01-10'
+order: 1
 source: 'https://github.com/jrussumbrella/dress-shop-mobile'
 stack: ' React js, Typescript, React Native, Expo'
 image: 'dress-shop-mobile.png'

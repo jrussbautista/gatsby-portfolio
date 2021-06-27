@@ -1,6 +1,6 @@
 ---
 title: 'Property Listings'
-date: 2020-04-20'
+order: 3
 website: 'https://property-listings.netlify.app/'
 source: 'https://github.com/jrussumbrella/property-listings'
 stack: 'React js, Typescript, Node Js, GraphQL, Mongo DB'

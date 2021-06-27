@@ -24,7 +24,7 @@ export default () => {
 
   const { allMarkdownRemark: items } = useStaticQuery(graphql`
     query {
-      allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
+      allMarkdownRemark(sort: { fields: frontmatter___order, order: ASC }) {
         edges {
           node {
             id
@@ -55,7 +55,7 @@ export default () => {
 
   return (
     <div id="project" style={{ margin: '3rem 0' }}>
-      <Heading title="Projects I've Developed" />
+      <Heading title="Personal Projects" />
       <Tabs active={active} tabs={tabs} onChange={setActive} />
       <Row>
         {allItems.map(item => (
