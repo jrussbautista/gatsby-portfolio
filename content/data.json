@@ -26,8 +26,8 @@
       "date": "August 2019 - Present",
       "description": [
         "Worked with a team of developers to developed  a web application that helped the company to transition to paperless for purchase requests and purchase request approval process.",
-        "Write clean, optimise and manageable code for our internal projects.",
-        "Communicate and collaborate with team of developers, designers and project manager on a daily basis."
+        "Write clean, optimised and manageable code for our internal projects.",
+        "Communicate and collaborate with a team of developers, designers and project managers on a daily basis."
       ],
       "company": "Sta. Clara International Corp."
     },
@@ -35,10 +35,9 @@
       "title": "Front-end Developer",
       "date": "June 2017- June 2019",
       "description": [
-        "Worked with a team of developers to rebuild the current e-commerce web app for the company’s main product.",
-        "Converted the current e-commerce web app into a more optimise and more performant web app.",
-        "Maintained and improved existing web apps.",
-        "Communicate and collaborate with team of developers, designers and project manager on a daily basis."
+        "Worked with a team of developers to rebuild the current e-commerce website that made it more elegant and performant.",
+        "Tested sites in various browsers and devices to ensure cross-browser compatibility and mobile responsiveness.",
+        "Communicate and collaborate with a team of developers, designers and project managers on a daily basis."
       ],
       "company": "E-Creations Inc."
     },
@@ -55,7 +54,10 @@
     {
       "list": [
         {
-          "name": "HTML5 + CSS3"
+          "name": "HTML"
+        },
+        {
+          "name": "CSS"
         },
         {
           "name": "Javascript"
@@ -80,13 +82,16 @@
           "name": "Node JS"
         },
         {
-          "name": "Laravel"
+          "name": "Express JS"
+        },
+        {
+          "name": "MongoDB"
         },
         {
           "name": "Firebase"
         },
         {
-          "name": "MongoDB"
+          "name": "Laravel"
         },
         {
           "name": "MySQL"
