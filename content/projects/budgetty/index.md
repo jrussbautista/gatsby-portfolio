@@ -8,4 +8,4 @@ image: 'budgetty.png'
 type: 'web'
 ---
 
-Managing your budget is hard to track. This will help you to keep track of your daily, weekly, monthly and yearly budgets.
+Managing your budget is hard to track. Easily keep track of your daily, weekly, monthly and yearly budgets.
