@@ -17,9 +17,6 @@
       "link": "https://twitter.com/jruss_bautista"
     }
   ],
-  "about": {
-    "description": "Hello. Im James, a full stack developer based in Manila, Philippines. I love to build things from the scratch. I started my career as a junior front end developer as an on the job trainee. After graduating, I continue my career as a front end developer for 2 years. After 2 years of being a front end developer I levelled up my career and decided to learn backend. As of now, I worked as a web developer. Aside from coding, I love to play basketball and go outside with my family or friends."
-  },
   "works": [
     {
       "title": "Web Developer",
@@ -54,19 +51,13 @@
     {
       "list": [
         {
-          "name": "HTML"
-        },
-        {
-          "name": "CSS"
-        },
-        {
           "name": "Javascript"
         },
         {
           "name": "Typescript"
         },
         {
-          "name": "React JS"
+          "name": "React"
         },
         {
           "name": "Next JS"
@@ -79,22 +70,19 @@
     {
       "list": [
         {
+          "name": "Jest"
+        },
+        {
+          "name": "React Testing Library"
+        },
+        {
+          "name": "Cypress"
+        },
+        {
           "name": "Node JS"
         },
         {
-          "name": "Express JS"
-        },
-        {
-          "name": "MongoDB"
-        },
-        {
-          "name": "Firebase"
-        },
-        {
           "name": "Laravel"
-        },
-        {
-          "name": "MySQL"
         }
       ]
     }

@@ -5,16 +5,7 @@ const theme = {
     light: '#089ECA',
     lighter: '#36A6BA',
     gray: '#ccc',
-    lightTheme: {
-      text: '#575757',
-      textHighlight: '#333',
-      background: '#fff',
-    },
-    darkTheme: {
-      text: '#dadada',
-      textHighlight: '#F0F0F0',
-      background: '#212121',
-    },
+    grayDark: '#666',
   },
   mediaQueries: {
     smallest: `only screen and (min-width: 320px)`,

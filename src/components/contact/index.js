@@ -4,7 +4,7 @@ import { graphql, useStaticQuery } from 'gatsby'
 import * as Yup from 'yup'
 import Heading from '../ui/heading'
 import Button from '../ui/button'
-import { Container, Form, SuccessMsg, Error } from './styled'
+import { Container, Form, SuccessMsg, Error, StyledHeading } from './styled'
 
 export default () => {
   const [submit, setSubmit] = useState(false)

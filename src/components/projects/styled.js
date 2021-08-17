@@ -59,12 +59,11 @@ export const StacksWrapper = styled.div`
     flex-wrap: wrap;
     li {
       font-size: 1.3rem;
-      padding: 0.5rem 0.5rem;
       margin-top: 0.3rem;
-      color: ${props => props.theme.colors.primary};
+      color: ${props => props.theme.colors.grayDark};
 
       &:not(:last-child) {
-        margin-right: 0.3rem;
+        margin-right: 1rem;
       }
     }
   }
@@ -77,6 +76,11 @@ export const Buttons = styled.div`
   align-items: center;
 
   a {
-    margin-right: 1rem;
+    margin-right: 2rem;
+  }
+
+  svg {
+    width: 1.6rem;
+    height: 1.6rem;
   }
 `

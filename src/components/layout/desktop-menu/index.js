@@ -14,10 +14,10 @@ const DesktopMenu = () => {
           smooth={true}
           offset={-80}
           duration={500}
-          to="project"
-          href="#project"
+          to="about"
+          href="#about"
         >
-          Projects
+          About
         </ScrollLink>
       </MenuList>
       <MenuList>
@@ -27,10 +27,10 @@ const DesktopMenu = () => {
           smooth={true}
           offset={-80}
           duration={500}
-          to="skill"
-          href="#skill"
+          to="project"
+          href="#project"
         >
-          Skills
+          Projects
         </ScrollLink>
       </MenuList>
       <MenuList>
@@ -48,23 +48,10 @@ const DesktopMenu = () => {
       </MenuList>
       <MenuList>
         <ScrollLink
-          spy={true}
           activeClass="active"
+          spy={true}
           smooth={true}
           offset={-80}
-          duration={500}
-          to="about"
-          href="#about"
-        >
-          About
-        </ScrollLink>
-      </MenuList>
-      <MenuList>
-        <ScrollLink
-          activeClass="active"
-          spy={true}
-          smooth={true}
-          offset={50}
           duration={500}
           to="contact"
           href="#contact"

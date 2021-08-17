@@ -6,7 +6,6 @@ const StyedHeading = styled.div`
   padding: 1.5rem 2rem;
   font-size: 2.4rem;
   font-weight: 600;
-  text-align: center;
 `
 
 const Heading = ({ title }) => {

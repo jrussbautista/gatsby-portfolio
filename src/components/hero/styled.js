@@ -8,44 +8,15 @@ export const Hero = styled.section`
   flex-direction: column;
   justify-content: center;
   margin-top: 5rem;
+  min-height: calc(100vh);
 
   @media ${props => props.theme.mediaQueries.large} {
-    min-height: calc(100vh);
     margin-top: 0;
   }
 
   h1 {
     font-size: 3rem;
     margin: 1.5rem 0;
-  }
-
-  .avatar-wrapper {
-    margin: 3rem auto;
-    display: flex;
-    align-items: start;
-    justify-content: center;
-    text-align: center;
-    background-color: var(--color-gray);
-    width: 20rem;
-    height: 20rem;
-    overflow: hidden;
-    border-radius: 15px;
-
-    @media ${props => props.theme.mediaQueries.large} {
-      order: 2;
-    }
-  }
-
-  .intro-main {
-    flex: 1;
-    @media ${props => props.theme.mediaQueries.large} {
-      margin-right: 10rem;
-    }
-  }
-
-  .avatar {
-    width: 100%;
-    height: 100%;
   }
 
   .intro-info {

@@ -1,9 +1,11 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  display: grid;
-  grid-gap: 1.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  @media ${props => props.theme.mediaQueries.large} {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+  }
 `
 
 export const Desc = styled.div`
@@ -12,17 +14,45 @@ export const Desc = styled.div`
   line-height: 1.8;
 `
 
+export const LeftContainer = styled.div`
+  @media ${props => props.theme.mediaQueries.large} {
+    flex: 1;
+  }
+
+  .tech-stacks {
+    display: flex;
+  }
+
+  .tech-stacks ul {
+    list-style-type: disc;
+    padding-left: 15px;
+    flex: 1;
+  }
+
+  .tech-stacks li {
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+  }
+
+  .tech-title {
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+`
+
 export const ImgWrapper = styled.div`
-  max-width: 300px;
+  max-width: 200px;
   margin: 1rem auto;
-  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.08);
-  overflow: hidden;
-  border-radius: 15px;
+
+  @media ${props => props.theme.mediaQueries.large} {
+    margin: 0 4rem;
+    max-width: 280px;
+  }
 `
 
 export const Image = styled.img`
   width: 100%;
-  height: 100%;
+  border-radius: 15px;
 `
 
 export const StyledAbout = styled.div`

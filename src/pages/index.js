@@ -1,7 +1,6 @@
 import React from 'react'
 import Layout from '../components/layout/'
 import SEO from '../components/seo'
-import Skills from '../components/skills'
 import Hero from '../components/hero'
 import Projects from '../components/projects'
 import Contact from '../components/contact'
@@ -23,10 +22,9 @@ const IndexPage = () => {
         ]}
       />
       <Hero />
-      <Projects />
-      <Skills />
-      <Works />
       <About />
+      <Projects />
+      <Works />
       <Contact />
       <BackToTop />
     </Layout>

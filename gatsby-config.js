@@ -4,9 +4,9 @@ module.exports = {
     email: `jrussclay@gmail.com`,
     description: `Hi Im James Russel C. Bautista. Im a Full stack developer. I build stuff.`,
     author: `James Russel C. Bautista`,
-    job: `Full Stack Software Engineer`,
+    job: `Full Stack Developer`,
     intro: `I build stuff.`,
-    sub: `I'm a full stack developer based in Manila, Philippines specializing in building websites and mobile applications.`,
+    sub: `I'm a full stack developer specializing in building web and mobile applications.`,
   },
   plugins: [
     {
@@ -50,16 +50,16 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/site-logo.png`, // This path is relative to the root of the site.
       },
-    }, 
+    },
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
           `limelight`,
-          `Montserrat\:300,400,400i,700` // you can also specify font weights and styles
+          `Montserrat\:300,400,400i,700`, // you can also specify font weights and styles
         ],
-        display: 'swap'
-      }
+        display: 'swap',
+      },
     },
     `gatsby-transformer-remark`,
     `gatsby-plugin-styled-components`,

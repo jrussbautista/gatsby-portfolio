@@ -22,6 +22,7 @@ export const Menu = styled.div`
     justify-content: flex-end;
     padding: 10px;
   }
+
   .close-button {
     background-color: transparent;
     border: 1px solid transparent;
@@ -33,10 +34,7 @@ export const Menu = styled.div`
     text-align: center;
 
     a {
-      font-size: 2rem;
-      @media ${props => props.theme.mediaQueries.large} {
-        font-size: 1.6rem;
-      }
+      font-size: 1.6rem;
     }
 
     .active {

@@ -95,25 +95,23 @@ export default () => {
                 </StacksWrapper>
                 <Buttons>
                   {item.node.frontmatter.website && (
-                    <Button
-                      title="Visit"
-                      as="a"
+                    <a
                       target="_blank"
                       href={item.node.frontmatter.website}
+                      title="Visit website"
                       rel="noopener noreferrer"
-                      icon={<LinkIcon color="#fff" />}
-                    />
+                    >
+                      <LinkIcon color="var(--color-primary)" />
+                    </a>
                   )}
-
-                  <Button
-                    href={item.node.frontmatter.source}
-                    title="Source"
-                    as="a"
-                    variant="outline"
+                  <a
                     target="_blank"
+                    href={item.node.frontmatter.source}
                     rel="noopener noreferrer"
-                    icon={<Github color={'var(--color-primary)'} />}
-                  />
+                    title="Visit github project"
+                  >
+                    <Github color={'var(--color-primary)'} />
+                  </a>
                 </Buttons>
               </Info>
             </Card>

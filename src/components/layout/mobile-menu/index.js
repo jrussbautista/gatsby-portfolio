@@ -20,6 +20,20 @@ const MobileMenu = ({ isOpen, onClose }) => {
             smooth={true}
             offset={-80}
             duration={500}
+            to="about"
+            activeClass="active"
+            spy={true}
+            href="#about"
+            onClick={onClose}
+          >
+            About
+          </ScrollLink>
+        </div>
+        <div className="menu-list">
+          <ScrollLink
+            smooth={true}
+            offset={-80}
+            duration={500}
             to="project"
             href="#project"
             activeClass="active"
@@ -29,20 +43,7 @@ const MobileMenu = ({ isOpen, onClose }) => {
             Projects
           </ScrollLink>
         </div>
-        <div className="menu-list">
-          <ScrollLink
-            smooth={true}
-            offset={-80}
-            duration={500}
-            activeClass="active"
-            spy={true}
-            to="skill"
-            href="#skill"
-            onClick={onClose}
-          >
-            Skills
-          </ScrollLink>
-        </div>
+
         <div className="menu-list">
           <ScrollLink
             activeClass="active"
@@ -59,21 +60,7 @@ const MobileMenu = ({ isOpen, onClose }) => {
         </div>
         <div className="menu-list">
           <ScrollLink
-            smooth={true}
             offset={-80}
-            duration={500}
-            to="about"
-            activeClass="active"
-            spy={true}
-            href="#about"
-            onClick={onClose}
-          >
-            About
-          </ScrollLink>
-        </div>
-        <div className="menu-list">
-          <ScrollLink
-            offset={50}
             duration={500}
             to="contact"
             href="#contact"
