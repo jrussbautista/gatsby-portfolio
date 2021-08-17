@@ -46,8 +46,8 @@ export const Hero = styled.section`
 `
 
 export const SeeMyProjects = styled(Button)`
-  height: 5rem;
-  padding: 0 3rem;
+  height: 4.5rem;
+  padding: 0 2rem;
   display: inline-flex;
   align-items: center;
   margin: 2rem 0;
