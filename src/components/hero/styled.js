@@ -7,12 +7,7 @@ export const Hero = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 5rem;
-  min-height: calc(100vh);
-
-  @media ${props => props.theme.mediaQueries.large} {
-    margin-top: 0;
-  }
+  min-height: 100vh;
 
   h1 {
     font-size: 3rem;
