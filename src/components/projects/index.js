@@ -4,7 +4,6 @@ import Img from 'gatsby-image'
 import Heading from '../ui/heading'
 import Github from '../icons/github'
 import LinkIcon from '../icons/link'
-import Button from '../ui/button'
 import {
   Row,
   ImageWrapper,
