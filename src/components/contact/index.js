@@ -67,7 +67,7 @@ export default () => {
 
   return (
     <Container id="contact">
-      <Heading title="Send me a message" />
+      <Heading className="header" title="Send me a message" />
       <div className="page-text">Have a projects in mind?</div>
       <div className="page-text">
         Email me at <span className="link">{data.site.siteMetadata.email}</span>

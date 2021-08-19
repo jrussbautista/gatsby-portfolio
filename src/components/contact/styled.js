@@ -2,12 +2,15 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   margin: 3rem 0 5rem 0;
-  text-align: center;
 
   .page-text {
     font-size: 1.6rem;
     text-align: center;
     margin-bottom: 1rem;
+  }
+
+  .header {
+    text-align: center;
   }
 `
 

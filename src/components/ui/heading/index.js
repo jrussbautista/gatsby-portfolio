@@ -8,8 +8,8 @@ const StyedHeading = styled.div`
   font-weight: 600;
 `
 
-const Heading = ({ title }) => {
-  return <StyedHeading> {title} </StyedHeading>
+const Heading = ({ title, className = '' }) => {
+  return <StyedHeading className={className}> {title} </StyedHeading>
 }
 
 Heading.propTypes = {
