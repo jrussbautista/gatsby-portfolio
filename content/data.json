@@ -70,16 +70,13 @@
     {
       "list": [
         {
-          "name": "Jest"
-        },
-        {
-          "name": "React Testing Library"
-        },
-        {
-          "name": "Cypress"
+          "name": "Firebase"
         },
         {
           "name": "Node JS"
+        },
+        {
+          "name": "Express"
         },
         {
           "name": "Laravel"

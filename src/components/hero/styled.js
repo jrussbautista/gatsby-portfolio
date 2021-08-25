@@ -39,7 +39,7 @@ export const Hero = styled.section`
   }
 
   .sub {
-    margin-top: 2rem;
+    margin: 1.5rem 0;
     line-height: 2.5rem;
     font-size: 1.5rem;
   }
