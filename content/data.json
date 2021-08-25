@@ -51,6 +51,9 @@
     {
       "list": [
         {
+          "name": "HTML + CSS"
+        },
+        {
           "name": "Javascript"
         },
         {
@@ -61,14 +64,14 @@
         },
         {
           "name": "Next JS"
-        },
-        {
-          "name": "React Native"
         }
       ]
     },
     {
       "list": [
+        {
+          "name": "React Native"
+        },
         {
           "name": "Firebase"
         },
