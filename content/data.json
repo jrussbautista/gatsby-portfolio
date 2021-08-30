@@ -51,9 +51,6 @@
     {
       "list": [
         {
-          "name": "HTML + CSS"
-        },
-        {
           "name": "Javascript"
         },
         {
@@ -80,9 +77,6 @@
         },
         {
           "name": "Express"
-        },
-        {
-          "name": "Laravel"
         }
       ]
     }

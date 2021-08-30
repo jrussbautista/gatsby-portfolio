@@ -3,7 +3,7 @@ title: 'JobTrack'
 order: 5
 website: 'https://jobtrack.vercel.app/'
 source: 'https://github.com/jrussumbrella/jobtrack'
-stack: 'Next js, React js, Typescript, Material UI, Firebase'
+stack: 'React, Typescript, Next JS, Firebase'
 image: 'job-track.png'
 type: 'web'
 ---

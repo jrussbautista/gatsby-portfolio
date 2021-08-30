@@ -3,7 +3,7 @@ title: 'Budgetty'
 order: 2
 website: 'https://budgettyy.netlify.app/'
 source: 'https://github.com/jrussumbrella/react-budgetty'
-stack: 'React js, Typescript, Laravel, PostgreSQL'
+stack: 'React, Typescript, Laravel, PostgreSQL'
 image: 'budgetty.png'
 type: 'web'
 ---

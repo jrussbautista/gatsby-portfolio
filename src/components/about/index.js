@@ -35,9 +35,9 @@ const About = () => {
                 developer.
               </p>
               <p>
-                As of now, I worked as a web developer at Sta. Clara Internation
-                Corporation and focused on building performant and well tested
-                applications.
+                As of now, I worked as a web developer at Sta. Clara
+                International Corporation and focused on building performant and
+                well tested applications.
               </p>
             </Desc>
             <p className="tech-title">

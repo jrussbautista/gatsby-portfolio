@@ -3,7 +3,7 @@ title: 'ProjectHub'
 order: 4
 website: 'https://project-hub.vercel.app/'
 source: 'https://github.com/jrussumbrella/projecthub'
-stack: 'Next js, React js, Typescript, Material UI, Firebase'
+stack: 'React, Typescript, Next JS, Firebase'
 image: 'projecthub.png'
 type: 'web'
 ---
