@@ -18,7 +18,7 @@ export const Card = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   @media ${props => props.theme.mediaQueries.large} {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 600px 1fr;
   }
   grid-gap: 2rem;
 `
@@ -26,7 +26,6 @@ export const Card = styled.div`
 export const ImageWrapper = styled.div`
   overflow: hidden;
   border-radius: 10px;
-  box-shadow: 0 2px 5px rgb(0 0 0 / 10%), 0 1px 2px rgb(0 0 0 / 5%);
 `
 
 export const Info = styled.div`

@@ -60,7 +60,13 @@ const DesktopMenu = () => {
         </ScrollLink>
       </MenuList>
       <MenuList>
-        <Button title="Resume" as="a" href={resume} target="_blank" />
+        <Button
+          title="Resume"
+          variant="outline"
+          as="a"
+          href={resume}
+          target="_blank"
+        />
       </MenuList>
     </StyledDesktopMenu>
   )

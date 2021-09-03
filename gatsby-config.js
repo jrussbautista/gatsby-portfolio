@@ -2,11 +2,11 @@ module.exports = {
   siteMetadata: {
     title: `James Russel C. Bautista | Portfolio`,
     email: `jrussclay@gmail.com`,
-    description: `Hi, Im James Russel C. Bautista. Im a Full stack developer. I build stuff.`,
+    description: `Hi, I'm James Russel C. Bautista. I'm a web developer.`,
     author: `James Russel C. Bautista`,
     job: `Full Stack Developer`,
-    intro: `I'm a full stack developer.`,
-    sub: `I'm passionate in creating web and mobile applications.`,
+    intro: `I'm a web developer.`,
+    sub: `I'm specialized in building high-quality web applications.`,
   },
   plugins: [
     {

@@ -91,15 +91,10 @@ export const WorkWrapper = styled.div`
 
     &__info {
       flex: 1;
-
-      @media ${props => props.theme.mediaQueries.large} {
-        padding-left: 3rem;
-      }
     }
 
     &__body {
       position: relative;
-      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.08);
       border-radius: 4px;
       border: 1px solid #eee;
       width: 100%;

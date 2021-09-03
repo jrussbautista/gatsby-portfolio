@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import Heading from '../ui/heading'
@@ -14,13 +14,8 @@ import {
   Card,
   Col,
 } from './styled'
-import Tabs from '../ui/tabs'
-
-const tabs = ['Web', 'Mobile']
 
 export default () => {
-  const [active, setActive] = useState('Web')
-
   const { allMarkdownRemark: items } = useStaticQuery(graphql`
     query {
       allMarkdownRemark(sort: { fields: frontmatter___order, order: ASC }) {
@@ -48,16 +43,12 @@ export default () => {
     }
   `)
 
-  const allItems = items.edges.filter(
-    item => item.node.frontmatter.type === active.toLowerCase()
-  )
-
   return (
     <div id="project" style={{ margin: '3rem 0' }}>
       <Heading title="Recent Projects" />
-      <Tabs active={active} tabs={tabs} onChange={setActive} />
+
       <Row>
-        {allItems.map(item => (
+        {items.edges.map(item => (
           <Col key={item.node.id}>
             <Card>
               <a
