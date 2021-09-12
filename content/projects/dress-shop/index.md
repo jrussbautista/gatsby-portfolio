@@ -1,5 +1,5 @@
 ---
-title: 'Dress Shop'
+title: 'Dress'
 order: 1
 website: 'https://dress-shop.vercel.app/'
 source: 'https://github.com/jrussumbrella/dress-shop'
